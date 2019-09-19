@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+	<a href="<%= root_path%>" class="navbar-brand"><i class="fa fa-facebook-official fa-2x"></i></a>
+
+	<form class="form-inline">
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="search" style="width: 320px;height:30px">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+			</div>
+		</div>
+	</form>
+
+	<div class="left-nav-link d-flex">
+		<div class="one">
+			<img src="#"> username
+		</div>
+
+		<div class="one">
+			home
+		</div>
+
+		<div class="one">
+			create
+		</div>
+
+		<div class="one">
+			<i class="fa fa-users "></i>
+			<i class="	fa fa-commenting mr-2 ml-2"></i>
+			<i class="fa fa-bell"></i>
+		</div>
+
+		<div class="five">
+			<i class="fa fa-question-circle"></i>
+		</div>
+
+		<div class="mt-2">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false">
+			</a>
+			<div class="ml-auto dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#">Advertising facebook</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Activity log</a>
+				<a class="dropdown-item" href="#">News feed preferences</a>
+				<a class="dropdown-item" href="#">Settings</a>
+				<div class="dropdown-divider"></div>
+				<% if user_signed_in? %>
+				<%= link_to "Log out", destroy_user_session_path, method: :delete ,class: "dropdown-item" %>
+				<% else %>
+				<%= link_to "Log In", new_user_registration_path ,class: "dropdown-item" %>
+				<% end %>
+			</div>
+		</div>
+
+	</div>
+
+</nav>

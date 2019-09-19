@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Facebook</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<title><%= yield(:title)%> | facebook</title>
+<%= render 'components/header' %>
+<%= render 'components/shims' %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<body>
+  <% if is_signup_path? %>
+  <%= render 'components/signup_nav' %>
+  <% else %>
+  <%= render 'components/navi' %>
+  <% end %>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= render 'components/flash' %>
+  <%= yield %>
+</body>
+
 </html>

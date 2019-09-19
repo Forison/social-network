@@ -1,0 +1,6 @@
+<div class="mx-auto fixed-bottom" style="width: 300px;">
+    <% flash.each do |message_type,message| %>
+    <div class="space"></div>
+    <div class="alert alert-<%=message_type%>"><%=message%></div>
+    <%end%>
+</div>
