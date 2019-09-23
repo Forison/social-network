@@ -1,4 +1,4 @@
-# USING BOOTSTRAP
+# social network
 
 A practical implementation of rails for development of an app similar to [facebook](facebook.com)as part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ "The Global School for Remote Software Developers!").
 
