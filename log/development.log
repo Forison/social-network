@@ -7556,3 +7556,3404 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 90ms (Views: 88.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-09-24 09:59:26 -0400
+  [1m[35m (35.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.9ms)
+Started GET "/" for ::1 at 2019-09-24 09:59:30 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (18776.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (12.3ms)
+  Rendered components/_flash.html.erb (1.8ms)
+Completed 200 OK in 18900ms (Views: 18896.8ms | ActiveRecord: 0.0ms)
+
+
+  Rendered components/_header.html.erb (20405.8ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (7.0ms)
+  Rendered components/_flash.html.erb (2.1ms)
+Completed 200 OK in 20534ms (Views: 20477.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 09:59:50 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (169.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 206ms (Views: 203.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:21:47 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (580.7ms)
+  Rendered components/_shims.html.erb (1.0ms)
+  Rendered components/_navi.html.erb (2.5ms)
+  Rendered components/_flash.html.erb (1.3ms)
+Completed 200 OK in 1085ms (Views: 729.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:21:53 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (77.5ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 93ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-09-24 10:22:01 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (61.1ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.1ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 1332ms (Views: 77.2ms | ActiveRecord: 1201.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-09-24 10:22:02 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.5ms)
+  Rendered components/_header.html.erb (110.6ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 139ms (Views: 136.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-09-24 10:28:30 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (5858.3ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 5881ms (Views: 5879.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-09-24 10:28:37 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (130.9ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (6.1ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 174ms (Views: 172.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:28:39 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+  Rendered components/_header.html.erb (72.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 93ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:28:40 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered components/_header.html.erb (152.3ms)
+  Rendered components/_shims.html.erb (1.3ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 189ms (Views: 186.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:29:09 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+  Rendered components/_header.html.erb (69.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.2ms)
+  Rendered components/_flash.html.erb (1.9ms)
+Completed 200 OK in 93ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:29:10 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (132.0ms)
+  Rendered components/_shims.html.erb (1.1ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 152ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:31:05 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+  Rendered components/_header.html.erb (72.7ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.3ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 92ms (Views: 90.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:31:06 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+  Rendered components/_header.html.erb (109.3ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (4.5ms)
+Completed 200 OK in 129ms (Views: 127.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:31:26 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (76.3ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 94ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:31:27 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (11.0ms)
+  Rendered components/_header.html.erb (123.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 156ms (Views: 153.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:35:12 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (4293.8ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 4316ms (Views: 4314.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:35:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (64.2ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 81ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:37:20 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (84.4ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.1ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 115ms (Views: 112.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:37:21 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (142.1ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (4.5ms)
+  Rendered components/_flash.html.erb (1.5ms)
+Completed 200 OK in 174ms (Views: 172.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:38:04 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+  Rendered components/_header.html.erb (73.1ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (2.1ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 90ms (Views: 88.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:38:04 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (98.7ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (2.7ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 123ms (Views: 120.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:38:24 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (4286.1ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 4310ms (Views: 4305.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:38:30 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (109.9ms)
+  Rendered components/_shims.html.erb (4.1ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (3.5ms)
+Completed 200 OK in 139ms (Views: 137.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:43:10 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (75.6ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 94ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:43:10 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (82.7ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (1.6ms)
+Completed 200 OK in 104ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:43:59 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (68.6ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 108ms (Views: 105.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:44:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (64.9ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 80ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:44:28 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (84.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 102ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:44:29 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (139.4ms)
+  Rendered components/_shims.html.erb (0.9ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 156ms (Views: 154.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:44:47 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (71.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 89ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:44:48 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (91.1ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 121ms (Views: 119.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:45:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (97.9ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.0ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 118ms (Views: 115.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:45:01 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (136.0ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 164ms (Views: 162.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:46:28 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (65.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:46:28 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (92.1ms)
+  Rendered components/_shims.html.erb (1.0ms)
+  Rendered components/_navi.html.erb (3.6ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 121ms (Views: 119.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:47:14 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (91.9ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (5.2ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 111ms (Views: 109.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:47:15 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (123.2ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (4.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 158ms (Views: 155.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:47:25 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (85.0ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.6ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 105ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:47:25 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (95.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 110ms (Views: 108.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:47:27 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (81.3ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 100ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:47:28 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (101.4ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (3.1ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 129ms (Views: 126.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:48:31 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (94.6ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 112ms (Views: 110.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:48:32 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (107.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 135ms (Views: 131.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:48:56 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (4.7ms)
+  Rendered components/_header.html.erb (60.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 81ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:48:57 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (85.7ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.5ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 106ms (Views: 104.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:49:42 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (83.4ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (4.3ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 114ms (Views: 110.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:49:43 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (100.3ms)
+  Rendered components/_shims.html.erb (0.9ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 119ms (Views: 116.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:50:03 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (91.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.4ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 107ms (Views: 105.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:50:03 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (149.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 187ms (Views: 185.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:52:20 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered components/_header.html.erb (74.1ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 97ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:52:21 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (105.5ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (4.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 131ms (Views: 128.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:53:48 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (5879.8ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (4.2ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 5901ms (Views: 5899.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:53:55 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (123.5ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.6ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 153ms (Views: 151.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:54:06 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+  Rendered components/_header.html.erb (4351.2ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.2ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 4375ms (Views: 4373.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:54:12 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (103.0ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 122ms (Views: 120.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:54:32 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (4326.9ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (4.3ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4353ms (Views: 4350.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:54:37 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (119.0ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (2.3ms)
+  Rendered components/_flash.html.erb (1.3ms)
+Completed 200 OK in 150ms (Views: 147.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:55:17 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (4417.3ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4433ms (Views: 4431.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:55:23 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (138.3ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 172ms (Views: 168.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:55:36 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (4272.6ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.3ms)
+  Rendered components/_flash.html.erb (1.3ms)
+Completed 200 OK in 4297ms (Views: 4294.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:55:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (70.5ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 88ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:55:55 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (4261.3ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.0ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 4281ms (Views: 4278.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:56:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (141.6ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 170ms (Views: 166.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:56:19 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+  Rendered components/_header.html.erb (4239.0ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.6ms)
+Completed 200 OK in 4261ms (Views: 4259.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:56:24 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered components/_header.html.erb (159.2ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (3.0ms)
+Completed 200 OK in 190ms (Views: 188.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:56:36 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+  Rendered components/_header.html.erb (4334.3ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 4351ms (Views: 4348.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:56:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (118.2ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.0ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 147ms (Views: 145.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:57:07 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (78.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 95ms (Views: 93.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 10:57:08 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (83.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:00:15 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (256.2ms)
+  Rendered components/_shims.html.erb (1.5ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 280ms (Views: 277.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:00:16 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+  Rendered components/_header.html.erb (95.0ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 120ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:00:25 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (74.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (3.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 96ms (Views: 94.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:00:26 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (112.1ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 138ms (Views: 135.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:00:40 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (84.6ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (2.1ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 103ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:00:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (98.5ms)
+  Rendered components/_shims.html.erb (1.5ms)
+  Rendered components/_navi.html.erb (2.5ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 117ms (Views: 115.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:00:54 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (86.5ms)
+  Rendered components/_shims.html.erb (0.9ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 108ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:00:55 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+  Rendered components/_header.html.erb (89.6ms)
+  Rendered components/_shims.html.erb (1.8ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 114ms (Views: 112.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:15:10 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (5260.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 5280ms (Views: 5278.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:15:16 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (110.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 133ms (Views: 130.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:16:23 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (97.9ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (4.1ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 119ms (Views: 117.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:16:24 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (89.0ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 112ms (Views: 110.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:17:39 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (80.8ms)
+  Rendered components/_shims.html.erb (1.0ms)
+  Rendered components/_navi.html.erb (2.7ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 107ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:17:40 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (118.7ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 137ms (Views: 135.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:18:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (67.3ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 85ms (Views: 82.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:18:01 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+  Rendered components/_header.html.erb (170.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 190ms (Views: 186.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:18:15 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (74.0ms)
+  Rendered components/_shims.html.erb (1.5ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 98ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:18:16 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+  Rendered components/_header.html.erb (121.1ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 154ms (Views: 151.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:19:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (99.2ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 124ms (Views: 121.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:19:01 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (109.9ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 146ms (Views: 144.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:19:43 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (72.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered posts/index.html.erb within layouts/application (2446.7ms)
+Completed 500 Internal Server Error in 2455ms (ActiveRecord: 73.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `title' for #<#<Class:0x00007f530011ed88>:0x00007f5304035148>):
+    1: <%= provide(title,'feed')%>
+    2: 
+    3: <body>
+    4: 
+  
+app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb__470337470759964380_69997263170860'
+Started GET "/posts" for ::1 at 2019-09-24 11:20:14 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (120.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.4ms)
+  Rendered components/_flash.html.erb (2.1ms)
+Completed 200 OK in 145ms (Views: 142.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:20:15 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+  Rendered components/_header.html.erb (123.2ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 144ms (Views: 142.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:20:36 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (69.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 93ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:20:37 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (100.0ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.4ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 123ms (Views: 120.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:21:01 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+  Rendered components/_header.html.erb (102.9ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 122ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:21:01 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (134.9ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (1.3ms)
+Completed 200 OK in 166ms (Views: 163.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:21:14 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (104.0ms)
+  Rendered components/_shims.html.erb (1.1ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (3.8ms)
+Completed 200 OK in 125ms (Views: 123.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:21:15 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+  Rendered components/_header.html.erb (176.2ms)
+  Rendered components/_shims.html.erb (1.8ms)
+  Rendered components/_navi.html.erb (2.6ms)
+  Rendered components/_flash.html.erb (3.1ms)
+Completed 200 OK in 222ms (Views: 219.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:21:29 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered components/_header.html.erb (81.6ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 105ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:21:30 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (134.2ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 167ms (Views: 165.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:22:06 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (81.1ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.2ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 102ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:22:07 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (123.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 143ms (Views: 140.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:23:10 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (79.7ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 97ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:23:11 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (133.2ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (3.3ms)
+  Rendered components/_flash.html.erb (1.3ms)
+Completed 200 OK in 170ms (Views: 167.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:23:51 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (85.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.5ms)
+  Rendered components/_flash.html.erb (2.0ms)
+Completed 200 OK in 106ms (Views: 104.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:23:52 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered components/_header.html.erb (109.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 131ms (Views: 127.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:24:56 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (81.8ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (2.2ms)
+Completed 200 OK in 104ms (Views: 102.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:24:56 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (96.2ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (2.4ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 126ms (Views: 124.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:25:27 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (79.2ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.0ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:25:28 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (122.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 146ms (Views: 140.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:25:45 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (74.6ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 99ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:25:45 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (75.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 91ms (Views: 88.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:26:12 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (109.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.8ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 133ms (Views: 131.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:26:13 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (121.2ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 148ms (Views: 144.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:29:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (69.2ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 90ms (Views: 88.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:29:42 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (148.1ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 185ms (Views: 183.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:30:46 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (74.6ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 91ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:30:47 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (95.1ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 118ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:31:25 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (79.7ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 95ms (Views: 93.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:31:26 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (74.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (1.4ms)
+Completed 200 OK in 95ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:32:36 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (77.0ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 94ms (Views: 92.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:32:37 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (90.3ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 124ms (Views: 120.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:35:42 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (73.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 94ms (Views: 91.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:35:43 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (74.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 91ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:36:07 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (73.6ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (1.6ms)
+Completed 200 OK in 90ms (Views: 88.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:36:08 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (104.2ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (3.2ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 123ms (Views: 121.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:36:20 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (74.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.0ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 92ms (Views: 90.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:36:20 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (137.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (2.6ms)
+Completed 200 OK in 176ms (Views: 170.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:50:54 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (4589.1ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4605ms (Views: 4602.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:51:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (70.6ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (5.2ms)
+Completed 200 OK in 94ms (Views: 92.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:51:58 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (4410.1ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4432ms (Views: 4430.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:52:04 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+  Rendered components/_header.html.erb (100.6ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (2.0ms)
+  Rendered components/_flash.html.erb (3.9ms)
+Completed 200 OK in 128ms (Views: 125.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:52:33 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+  Rendered components/_header.html.erb (4396.4ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 4421ms (Views: 4419.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:52:38 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (83.8ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.0ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 102ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:53:56 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  Rendered components/_header.html.erb (4233.0ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (2.5ms)
+  Rendered components/_flash.html.erb (2.5ms)
+Completed 200 OK in 4255ms (Views: 4252.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:54:01 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (130.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 162ms (Views: 160.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:55:06 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (110.7ms)
+  Rendered components/_shims.html.erb (4.7ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 134ms (Views: 132.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:55:07 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+  Rendered components/_header.html.erb (83.6ms)
+  Rendered components/_shims.html.erb (1.0ms)
+  Rendered components/_navi.html.erb (2.2ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 103ms (Views: 101.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:55:24 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (93.8ms)
+  Rendered components/_shims.html.erb (1.0ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (1.3ms)
+Completed 200 OK in 121ms (Views: 119.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:55:25 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (132.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.4ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 165ms (Views: 163.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:56:16 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (87.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.1ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 114ms (Views: 111.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:56:17 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (68.7ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 87ms (Views: 85.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:58:01 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (78.3ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 97ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:58:02 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (139.0ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 163ms (Views: 161.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:59:03 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (69.0ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 11:59:03 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+  Rendered components/_header.html.erb (134.0ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.3ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 168ms (Views: 164.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:00:39 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (4257.5ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 4277ms (Views: 4275.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:00:45 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+  Rendered components/_header.html.erb (110.9ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.0ms)
+  Rendered components/_flash.html.erb (2.7ms)
+Completed 200 OK in 144ms (Views: 142.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:01:21 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (4255.8ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4271ms (Views: 4269.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:01:26 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (114.6ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 142ms (Views: 138.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:02:36 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (4208.9ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.3ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4229ms (Views: 4227.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:02:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (93.8ms)
+  Rendered components/_shims.html.erb (0.9ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (1.7ms)
+Completed 200 OK in 116ms (Views: 113.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:02:58 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (4353.5ms)
+  Rendered components/_shims.html.erb (0.9ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 4376ms (Views: 4372.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:03:03 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (133.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.0ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 158ms (Views: 155.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:03:25 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+  Rendered components/_header.html.erb (4267.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4286ms (Views: 4284.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:03:31 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (64.9ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 81ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:03:55 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (4274.2ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4299ms (Views: 4297.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:04:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+  Rendered components/_header.html.erb (65.4ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:04:47 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+  Rendered components/_header.html.erb (4315.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 4343ms (Views: 4339.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:04:52 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (144.1ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 175ms (Views: 173.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:06:04 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (3.4ms)
+  Rendered components/_header.html.erb (4332.5ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 4351ms (Views: 4349.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:06:09 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (13.3ms)
+  Rendered components/_header.html.erb (76.0ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 105ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:07:25 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+  Rendered components/_header.html.erb (80.4ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.2ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 99ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:07:26 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (110.9ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 136ms (Views: 134.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:08:20 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (104.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.1ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 127ms (Views: 122.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:08:20 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (154.0ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (6.4ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 182ms (Views: 180.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:08:47 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+  Rendered components/_header.html.erb (99.8ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (2.0ms)
+  Rendered components/_flash.html.erb (2.8ms)
+Completed 200 OK in 124ms (Views: 121.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:08:48 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (191.9ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 223ms (Views: 220.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:09:17 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (75.9ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (1.3ms)
+Completed 200 OK in 101ms (Views: 99.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:09:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (88.1ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 119ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:09:48 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+  Rendered components/_header.html.erb (58.1ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.2ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:09:49 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (83.0ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 102ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:09:56 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (86.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 108ms (Views: 106.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:09:57 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (108.6ms)
+  Rendered components/_shims.html.erb (0.9ms)
+  Rendered components/_navi.html.erb (2.3ms)
+  Rendered components/_flash.html.erb (1.4ms)
+Completed 200 OK in 135ms (Views: 132.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:10:20 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (4.1ms)
+  Rendered components/_header.html.erb (4254.3ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 4279ms (Views: 4276.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:10:25 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (131.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (4.3ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 162ms (Views: 160.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:10:45 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+  Rendered components/_header.html.erb (4318.3ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 4336ms (Views: 4334.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:10:50 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (143.2ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 171ms (Views: 167.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:11:02 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (4244.9ms)
+  Rendered components/_shims.html.erb (0.9ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 4266ms (Views: 4263.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:11:07 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (126.4ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 151ms (Views: 146.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:11:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (73.6ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 93ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:11:19 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (116.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (1.8ms)
+Completed 200 OK in 149ms (Views: 147.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:11:27 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (76.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.2ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 101ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:11:27 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+  Rendered components/_header.html.erb (144.2ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (1.9ms)
+Completed 200 OK in 184ms (Views: 182.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:13:52 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+  Rendered components/_header.html.erb (84.4ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 98ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:13:53 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (95.6ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 120ms (Views: 117.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:14:05 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (80.3ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 103ms (Views: 101.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:14:06 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (115.5ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.9ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 142ms (Views: 139.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:14:58 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (72.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.1ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 94ms (Views: 92.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:14:59 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+  Rendered components/_header.html.erb (89.2ms)
+  Rendered components/_shims.html.erb (0.9ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 107ms (Views: 105.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:15:45 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (61.9ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 80ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:15:46 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (98.5ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.3ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 123ms (Views: 121.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:15:55 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (64.7ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 86ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:15:56 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (99.6ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 119ms (Views: 117.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:16:11 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (81.8ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 101ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:16:11 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered components/_header.html.erb (71.1ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 87ms (Views: 85.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:16:27 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (77.2ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:16:28 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (124.0ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (4.4ms)
+Completed 200 OK in 150ms (Views: 148.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:16:47 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (72.4ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 90ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:16:48 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+  Rendered components/_header.html.erb (144.2ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 181ms (Views: 177.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:16:59 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (81.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 99ms (Views: 96.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:17:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (90.0ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 117ms (Views: 115.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:17:28 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+  Rendered components/_header.html.erb (66.6ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 86ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:17:29 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+  Rendered components/_header.html.erb (136.0ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.2ms)
+  Rendered components/_flash.html.erb (1.4ms)
+Completed 200 OK in 173ms (Views: 171.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:17:46 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (68.0ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 89ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:17:47 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (81.8ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 97ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:24:07 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+  Rendered components/_header.html.erb (311.8ms)
+  Rendered components/_shims.html.erb (0.9ms)
+  Rendered components/_navi.html.erb (2.5ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 359ms (Views: 336.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:24:09 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (97.2ms)
+  Rendered components/_shims.html.erb (1.1ms)
+  Rendered components/_navi.html.erb (2.4ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 124ms (Views: 122.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:25:06 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (89.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 106ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:25:07 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (117.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 149ms (Views: 145.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:25:57 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (76.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 97ms (Views: 94.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:25:58 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered components/_header.html.erb (82.4ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 106ms (Views: 103.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:27:17 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  Rendered components/_header.html.erb (88.2ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.0ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 106ms (Views: 104.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:27:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+  Rendered components/_header.html.erb (101.6ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.2ms)
+  Rendered components/_flash.html.erb (1.3ms)
+Completed 200 OK in 126ms (Views: 123.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:28:26 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (5.5ms)
+  Rendered components/_header.html.erb (6029.9ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 6055ms (Views: 6053.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:28:33 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (60.6ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:28:52 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+  Rendered components/_header.html.erb (4321.6ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.0ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4345ms (Views: 4342.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:28:57 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered components/_header.html.erb (101.9ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 129ms (Views: 126.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:29:22 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (4331.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4347ms (Views: 4345.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:29:27 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+  Rendered components/_header.html.erb (93.9ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.1ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 121ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:29:40 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (4449.3ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (3.7ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4476ms (Views: 4473.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:29:45 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (98.5ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (4.3ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 127ms (Views: 125.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:29:54 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+  Rendered components/_header.html.erb (4296.1ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (2.1ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 4316ms (Views: 4313.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:29:59 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered components/_header.html.erb (112.6ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.2ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 145ms (Views: 143.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:30:11 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (4286.1ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.3ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4306ms (Views: 4304.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:30:16 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (3.4ms)
+  Rendered components/_header.html.erb (68.2ms)
+  Rendered components/_shims.html.erb (1.1ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 93ms (Views: 91.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:30:48 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+  Rendered components/_header.html.erb (75.1ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 97ms (Views: 95.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:30:49 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+  Rendered components/_header.html.erb (64.1ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (1.4ms)
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:31:28 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+  Rendered components/_header.html.erb (103.1ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 123ms (Views: 121.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:31:29 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+  Rendered components/_header.html.erb (104.2ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (3.1ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 138ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:31:45 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+  Rendered components/_header.html.erb (4330.4ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4350ms (Views: 4347.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:31:50 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (123.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (5.0ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 166ms (Views: 164.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:35:03 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered components/_header.html.erb (4490.4ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 4510ms (Views: 4507.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:35:08 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+  Rendered components/_header.html.erb (103.9ms)
+  Rendered components/_shims.html.erb (0.9ms)
+  Rendered components/_navi.html.erb (2.2ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 134ms (Views: 132.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:36:10 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered components/_header.html.erb (4308.4ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4324ms (Views: 4321.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:36:15 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (116.9ms)
+  Rendered components/_shims.html.erb (0.9ms)
+  Rendered components/_navi.html.erb (6.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 142ms (Views: 140.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:36:28 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+  Rendered components/_header.html.erb (4354.8ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 4377ms (Views: 4375.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:36:33 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (108.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.0ms)
+  Rendered components/_flash.html.erb (3.2ms)
+Completed 200 OK in 138ms (Views: 136.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:36:42 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+  Rendered components/_header.html.erb (4313.5ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 4333ms (Views: 4330.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:36:47 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (117.3ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (3.2ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 148ms (Views: 146.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:37:03 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (4353.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.0ms)
+  Rendered components/_flash.html.erb (2.2ms)
+Completed 200 OK in 4380ms (Views: 4377.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:37:08 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (121.4ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (2.0ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 160ms (Views: 158.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:37:25 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (90.8ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 108ms (Views: 105.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:37:26 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (5.6ms)
+  Rendered components/_header.html.erb (76.6ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 99ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:37:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (74.7ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (1.6ms)
+Completed 200 OK in 92ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:37:42 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (102.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 124ms (Views: 122.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:39:42 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (71.2ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 95ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:39:43 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  Rendered components/_header.html.erb (80.3ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 97ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:42:01 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (84.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 104ms (Views: 101.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:42:02 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (82.6ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.0ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 99ms (Views: 97.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:42:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (73.7ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 95ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:42:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (104.2ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (4.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 132ms (Views: 128.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:42:58 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (84.6ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 103ms (Views: 101.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:42:59 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered components/_header.html.erb (98.3ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 112ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:44:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered components/_header.html.erb (89.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 110ms (Views: 108.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:44:19 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered components/_header.html.erb (119.9ms)
+  Rendered components/_shims.html.erb (2.9ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (1.4ms)
+Completed 200 OK in 156ms (Views: 153.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:48:51 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  Rendered components/_header.html.erb (342.0ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 364ms (Views: 361.9ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/one.png"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.3) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.3) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts" for ::1 at 2019-09-24 12:48:52 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+  Rendered components/_header.html.erb (122.5ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 149ms (Views: 147.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:51:17 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (517.3ms)
+  Rendered components/_header.html.erb (107.5ms)
+  Rendered components/_shims.html.erb (1.1ms)
+  Rendered components/_navi.html.erb (2.9ms)
+  Rendered components/_flash.html.erb (2.4ms)
+Completed 200 OK in 652ms (Views: 649.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:51:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (14.0ms)
+  Rendered components/_header.html.erb (125.2ms)
+  Rendered components/_shims.html.erb (4.9ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 171ms (Views: 167.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:52:09 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (11.4ms)
+  Rendered components/_header.html.erb (81.1ms)
+  Rendered components/_shims.html.erb (0.9ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 110ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:52:09 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (6.4ms)
+  Rendered components/_header.html.erb (82.2ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 109ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:52:37 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+  Rendered components/_header.html.erb (5065.5ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 5085ms (Views: 5082.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:52:43 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (5.5ms)
+  Rendered components/_header.html.erb (67.0ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.8ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 90ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:59:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (749.0ms)
+  Rendered components/_header.html.erb (282.8ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 1134ms (Views: 1118.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 12:59:44 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (9.3ms)
+  Rendered components/_header.html.erb (104.8ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (4.4ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 140ms (Views: 136.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:00:03 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (7.7ms)
+  Rendered components/_header.html.erb (6390.8ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (2.3ms)
+Completed 200 OK in 6414ms (Views: 6412.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:00:11 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (19.5ms)
+  Rendered components/_header.html.erb (99.8ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 143ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:02:42 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (36.7ms)
+  Rendered components/_header.html.erb (117.9ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.6ms)
+  Rendered components/_flash.html.erb (3.2ms)
+Completed 200 OK in 184ms (Views: 181.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:02:43 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (23.7ms)
+  Rendered components/_header.html.erb (135.3ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (2.0ms)
+Completed 200 OK in 190ms (Views: 188.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:03:04 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (12.9ms)
+  Rendered components/_header.html.erb (121.1ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (2.2ms)
+  Rendered components/_flash.html.erb (1.4ms)
+Completed 200 OK in 153ms (Views: 150.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:03:05 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (14.0ms)
+  Rendered components/_header.html.erb (154.7ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (7.3ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 197ms (Views: 195.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:03:17 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (13.7ms)
+  Rendered components/_header.html.erb (81.3ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 113ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:03:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (20.9ms)
+  Rendered components/_header.html.erb (104.2ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 157ms (Views: 153.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:04:47 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (15.5ms)
+  Rendered components/_header.html.erb (8440.1ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 8478ms (Views: 8475.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:04:58 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (9.5ms)
+  Rendered components/_header.html.erb (138.8ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (3.3ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 176ms (Views: 173.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:05:22 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (15.0ms)
+  Rendered components/_header.html.erb (109.4ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.0ms)
+  Rendered components/_flash.html.erb (2.1ms)
+Completed 200 OK in 152ms (Views: 148.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:05:23 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (20.7ms)
+  Rendered components/_header.html.erb (84.5ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 137ms (Views: 128.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:06:17 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (14.1ms)
+  Rendered components/_header.html.erb (5118.6ms)
+  Rendered components/_shims.html.erb (0.5ms)
+  Rendered components/_navi.html.erb (2.8ms)
+  Rendered components/_flash.html.erb (1.8ms)
+Completed 200 OK in 5154ms (Views: 5151.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:06:23 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (15.8ms)
+  Rendered components/_header.html.erb (137.1ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.4ms)
+  Rendered components/_flash.html.erb (1.2ms)
+Completed 200 OK in 176ms (Views: 173.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:07:43 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (20.4ms)
+  Rendered components/_header.html.erb (5062.2ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (4.1ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 5115ms (Views: 5111.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:07:49 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (23.0ms)
+  Rendered components/_header.html.erb (145.5ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (4.2ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 206ms (Views: 204.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:11:55 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (10.3ms)
+  Rendered components/_header.html.erb (111.1ms)
+  Rendered components/_shims.html.erb (1.1ms)
+  Rendered components/_navi.html.erb (1.7ms)
+  Rendered components/_flash.html.erb (1.3ms)
+Completed 200 OK in 140ms (Views: 138.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:11:56 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (21.5ms)
+  Rendered components/_header.html.erb (177.3ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (4.2ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 239ms (Views: 237.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:12:40 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (6.6ms)
+  Rendered components/_header.html.erb (82.8ms)
+  Rendered components/_shims.html.erb (0.8ms)
+  Rendered components/_navi.html.erb (1.5ms)
+  Rendered components/_flash.html.erb (24.2ms)
+Completed 200 OK in 145ms (Views: 142.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:12:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (16.2ms)
+  Rendered components/_header.html.erb (108.1ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (1.9ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 154ms (Views: 151.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:12:56 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (9.0ms)
+  Rendered components/_header.html.erb (80.5ms)
+  Rendered components/_shims.html.erb (12.8ms)
+  Rendered components/_navi.html.erb (2.1ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 118ms (Views: 116.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:12:56 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (8.3ms)
+  Rendered components/_header.html.erb (89.2ms)
+  Rendered components/_shims.html.erb (1.0ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (3.0ms)
+Completed 200 OK in 138ms (Views: 136.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:13:19 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (7.2ms)
+  Rendered components/_header.html.erb (4352.2ms)
+  Rendered components/_shims.html.erb (23.9ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.7ms)
+Completed 200 OK in 4403ms (Views: 4400.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:13:24 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (6.9ms)
+  Rendered components/_header.html.erb (100.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (2.9ms)
+  Rendered components/_flash.html.erb (1.0ms)
+Completed 200 OK in 132ms (Views: 130.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:14:15 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (7.4ms)
+  Rendered components/_header.html.erb (76.7ms)
+  Rendered components/_shims.html.erb (0.6ms)
+  Rendered components/_navi.html.erb (3.1ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:14:16 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (22.6ms)
+  Rendered components/_header.html.erb (156.7ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (2.2ms)
+  Rendered components/_flash.html.erb (0.9ms)
+Completed 200 OK in 215ms (Views: 212.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:20:14 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (44.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered posts/index.html.erb within layouts/application (9511.8ms)
+Completed 500 Internal Server Error in 9592ms (ActiveRecord: 49.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `uploader' for #<#<Class:0x00007f530011ed88>:0x00007f52ed6f6fe8>):
+    29: 							</div>
+    30: 							<div class="card-body"></div>
+    31: 							<div class="card-footer">
+    32: 								<img src="<%= asset(uploader.png)%>" alt="photo-upload">
+    33: 								<img src="<%= asset(feeling.png)%>" alt="photo-upload">
+    34: 								<img src="<%= asset(tag.png)%>" alt="photo-upload">
+    35: 							</div>
+  
+app/views/posts/index.html.erb:32:in `_app_views_posts_index_html_erb__470337470759964380_69997073796380'
+Started GET "/posts" for ::1 at 2019-09-24 13:21:17 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered posts/index.html.erb within layouts/application (462.5ms)
+Completed 500 Internal Server Error in 468ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `asset' for #<#<Class:0x00007f530011ed88>:0x00007f52f84a1148>
+Did you mean?  asset_url):
+    29: 							</div>
+    30: 							<div class="card-body"></div>
+    31: 							<div class="card-footer">
+    32: 								<img src="<%= asset('uploader.png')%>" alt="photo-upload">
+    33: 								<img src="<%= asset('feeling.png')%>" alt="photo-upload">
+    34: 								<img src="<%= asset('tag.png')%>" alt="photo-upload">
+    35: 							</div>
+  
+app/views/posts/index.html.erb:32:in `_app_views_posts_index_html_erb__470337470759964380_69997164826100'
+Started GET "/posts" for ::1 at 2019-09-24 13:22:01 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/addo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered posts/index.html.erb within layouts/application (1379.5ms)
+Completed 500 Internal Server Error in 1394ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `asset_paht' for #<#<Class:0x00007f530011ed88>:0x00007f52f82b8fe8>
+Did you mean?  asset_path):
+    30: 							<div class="card-body"></div>
+    31: 							<div class="card-footer">
+    32: 								<img src="<%= asset_path('uploader.png')%>" alt="photo-upload">
+    33: 								<img src="<%= asset_paht('feeling.png')%>" alt="photo-upload">
+    34: 								<img src="<%= asset_path('tag.png')%>" alt="photo-upload">
+    35: 							</div>
+    36: 						</div>
+  
+app/views/posts/index.html.erb:33:in `_app_views_posts_index_html_erb__470337470759964380_69997163826920'
+Started GET "/posts" for ::1 at 2019-09-24 13:22:18 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (9.5ms)
+  Rendered components/_header.html.erb (245.6ms)
+  Rendered components/_shims.html.erb (0.7ms)
+  Rendered components/_navi.html.erb (1.8ms)
+  Rendered components/_flash.html.erb (1.1ms)
+Completed 200 OK in 288ms (Views: 286.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-09-24 13:22:20 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (17.9ms)
+  Rendered components/_header.html.erb (169.5ms)
+  Rendered components/_shims.html.erb (18.1ms)
+  Rendered components/_navi.html.erb (1.6ms)
+  Rendered components/_flash.html.erb (0.8ms)
+Completed 200 OK in 221ms (Views: 218.9ms | ActiveRecord: 0.0ms)
+
+

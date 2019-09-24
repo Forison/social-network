@@ -1,0 +1,58 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.layout{
+    width: 100%;
+    height: 800px;
+    border: 1px solid red;
+}
+.sect{
+    width: 100%;
+    height: 200px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+img[alt='oops']{
+    width: 50px;
+    height: 100px;
+    border: 1px solid gold;
+    // border-radius: 100%;
+}
+body{
+    background: rgb(240, 240, 240);
+}
+.suggested-wrap{
+    border: 1px solid silver;
+}
+.suggested-likes{
+    height: 35px;
+    border: 1px solid silver;
+}
+.suggested-page-image{
+   border: 1px solid silver; 
+}
+
+img[alt='suggested-page-image']{
+    width: 100%;
+    height: 200px;
+}
+img[alt='suggested-page-image-logo']{
+    width: 50px;
+    height: 50px;
+}
+.fa-plus{
+    height: 22px;
+    border: 1px solid silver;
+}
+.instant-game{
+    border: 1px solid silver;
+}
+
+.your-game{
+    border: 1px solid silver;
+}
+
+.chats{
+    height: 400px;
+    border: 1px solid silver;
+}

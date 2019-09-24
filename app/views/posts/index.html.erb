@@ -1,0 +1,155 @@
+<%= provide(:title,'feed')%>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-2">
+				<div class="link-wrap p-1">
+					<a><img src="" alt="name"> Kofi</a> <br>
+
+					<div class="mt-2"><i class="fa fa-desktop"></i> some random link</div> <br>
+					<span>shortcut</span><br>
+					<a><i class="fa fa-desktop"></i> some random link</a> <br>
+					<a><i class="fa fa-desktop"></i> some random link</a> <br>
+					<a><i class="fa fa-desktop"></i> some random link</a> <br>
+					<a><i class="fa fa-desktop"></i> some random link</a> <br>
+					<a><i class="fa fa-desktop"></i> some random link</a> <br>
+					<span class="mt-1">explain</span><br>
+					<a><i class="fa fa-desktop"></i> some random link</a> <br>
+					<a><i class="fa fa-desktop"></i> some random link</a> <br>
+				</div>
+			</div>
+			<div class="col-5">
+				<div class="main">
+					<div class="topmost">
+						<div class="card mt-2">
+							<div class="card-header">
+								Create Post
+							</div>
+							<div class="card-body"></div>
+							<div class="card-footer">
+								<img src="<%= asset_path('uploader.png')%>" alt="photo-upload">
+								<img src="<%= asset_path('feeling.png')%>" alt="photo-upload">
+								<img src="<%= asset_path('tag.png')%>" alt="photo-upload">
+							</div>
+						</div>
+					</div>
+
+					<div class="next-to-topmost">
+						<div class="card mt-2">
+
+							<div class="card-body">
+
+								<div class="row">
+									<div class="col-3 p-1">
+										<div class="sect"></div>
+									</div>
+									<div class="col-3 p-1">
+										<div class="sect"></div>
+									</div>
+									<div class="col-3 p-1">
+										<div class="sect"></div>
+									</div>
+									<div class="col-3 p-1">
+										<div class="sect"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+					<div class="posted">
+						<div class="card mt-2">
+							<div class="card-body">
+								<div class="photo-and-name">
+									<span><img src="" alt="oops"> name of poster</span>
+									<i class="fa fa-ellipsis-h float-right"></i>
+								</div>
+								<div class="text-content p-1 mt-1">
+									<p>this is a randeomtext assumed to have been posted by a random poster douche bag</p>
+								</div>
+								<div class="post-photo">
+
+								</div>
+							</div>
+
+							<div class="card-footer d-flex justify-content-around">
+								<i class="fa fa-thumbs-up "> like</i>
+								<i class="fa fa-comment "> comment</i>
+								<i class="fa fa-share "> share</i>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="col-3">
+				<div class="aside-main">
+					<div class="suggested">
+						<div class="card mt-2">
+							<div class="card-body">
+								<span class="p-1 pr-1">Suggested Pages <a href="#" class="float-right pr-1">see all</a></span>
+
+								<div class="suggested-wrap mt-1">
+									<div class="suggested-likes">
+
+									</div>
+
+									<div class="suggested-page-name">
+										<img src="<%= asset_path('ot.jpg') %>" alt="suggested-page-image-logo">Somme Title
+									</div>
+
+									<div class="suggested-page-image mt-2">
+										<img src="<%= asset_path('ot.jpg') %>" alt="suggested-page-image">
+
+									</div>
+									<i class="fa fa-thumbs-up "> like</i>
+
+
+
+								</div>
+
+
+							</div>
+
+						</div>
+
+						<div class="card mt-2">
+							<div class="card-body d-flex">
+								<span class="p-1 pr-1">English (US) · Français (France) · Português (Brasil) · Español · Deutsch
+								</span>
+								<i class="fa fa-plus p-1"></i>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-2 p-0">
+				<div class="chat-side">
+					<div class="instant-game">
+						<img src="<%= asset_path('one.png') %>" alt="instant-game">
+					</div>
+					<div class="your-game">
+						<img src="<%= asset_path('two.png') %>" alt="your-game">
+					</div>
+					<div class="chats">
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+</body>
