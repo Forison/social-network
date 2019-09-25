@@ -1,12 +1,13 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!
   def index 
-    @posts = Post.all 
-  end
-  def new
     @post = Post.new
+    @posts = Post.ordered_post 
+    
   end
+ 
   def create 
-    @post = current_user.build(post_params)
+    @post = current_user.posts.build(post_params)
     if @post.save
       flash[:success] = 'post was successfull'
       redirect_to root_path
@@ -17,6 +18,6 @@ class PostsController < ApplicationController
   end
   private 
   def post_params
-    params.require(:post).permit(:postcontent,:user_id)
+    params.require(:post).permit(:postcontent,:user_id, avatar: [])
   end
 end

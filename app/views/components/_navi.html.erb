@@ -1,18 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light ">
 	<a href="<%= root_path%>" class="navbar-brand"><i class="fa fa-facebook-official fa-2x"></i></a>
 
-	<form class="form-inline">
+	<form class="form-inline" method='get' action="<%= users_path(:search) %>">
 		<div class="input-group">
-			<input type="text" class="form-control" placeholder="search" style="width: 320px;height:30px">
+			<input type="text" name='search' class="form-control" placeholder="search" style="width: 320px;height:30px">
 			<div class="input-group-prepend">
-				<span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+				<button type="submit" class="btn input-group-text" id="basic-addon1"><i
+						class="fa fa-search"></i></button>
 			</div>
 		</div>
 	</form>
 
+
 	<div class="left-nav-link d-flex">
 		<div class="one">
-			<img src="#"> username
+			<a href="<%= user_path(current_user.id)%>"><img src="#"> <%= current_user.lastname.capitalize %></a>
 		</div>
 
 		<div class="one">

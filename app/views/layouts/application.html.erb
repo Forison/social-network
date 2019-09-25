@@ -5,7 +5,7 @@
 <%= render 'components/shims' %>
 
 <body>
-  <% if is_signup_path? %>
+  <% if is_signup_path? || !user_signed_in? %>
   <%= render 'components/signup_nav' %>
   <% else %>
   <%= render 'components/navi' %>

@@ -1,0 +1,68 @@
+<!-- <%= provide(:title,'update account') %>
+
+<body>
+	<div class="container">
+		<%= form_for(:user, url: user_path) do |f| %>
+		<div class="row">
+			<div class="col-8">
+				<div class="field text-center">
+					<%= f.label :avatar, 'Profile Picture' %>
+					<%= f.file_field :avatar, multiple: true, placeholder: " attach image to post", class: "mx-auto my-pic form-control" %>
+				</div>
+			</div>
+			<div class="col-4">
+
+
+
+
+				<div class="names d-flex">
+					<div class="field p-1">
+
+						<%= f.text_field :lastname, autofocus: true, autocomplete: "lastname", placeholder: 'Lastname' ,class: 'form-control' %>
+					</div>
+					<div class="field p-1">
+
+						<%= f.text_field :firstname, autofocus: true, autocomplete: "firstname", placeholder: 'Firstname' ,class: 'form-control' %>
+					</div>
+				</div>
+
+				<div class="field p-1">
+					<%= f.label :email %><br />
+					<%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
+				</div>
+
+				<div class="field p-1">
+					<%= f.label :dob %><br />
+					<%= f.text_field :dob, autofocus: true , class: 'form-control'%>
+				</div>
+				<div class="field p-1">
+					<%= f.label :gender %><br />
+					<%= f.text_field :gender, autofocus: true, autocomplete: "gender",class: 'form-control' %>
+				</div>
+
+				<div class="field p-1">
+					<%= f.label :password %>
+					<% if @minimum_password_length %>
+					<em>(<%= @minimum_password_length %> characters minimum)</em>
+					<% end %><br />
+					<%= f.password_field :password, autocomplete: "new-password" , class: 'form-control' %>
+				</div>
+
+				<div class="field p-1">
+					<%= f.label :password_confirmation %><br />
+					<%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control' %>
+				</div>
+
+				<div class="actions p-1 mt-2">
+					<%= f.submit "Update" , class: 'btn btn-primary'%>
+				</div>
+
+				<p class="p-1">
+					<%= link_to "Back", :back %>
+				</p>
+
+
+			</div>
+			<% end %>
+		</div>
+</body> -->
