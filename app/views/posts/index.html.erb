@@ -6,7 +6,8 @@
 		<div class="row">
 			<div class="col-2">
 				<div class="link-wrap p-1">
-					<a href="<%= user_path(current_user.id)%>"> <img src="" alt="name"> <%= current_user.firstname %></a> <br>
+					<a href="<%= usersaffair_path(current_user.id)%>"> <img src="" alt="name">
+						<%= current_user.firstname %></a> <br>
 
 					<div class="mt-2"><i class="fa fa-desktop"></i> some random link</div> <br>
 					<span>Shortcut</span><br>
@@ -30,7 +31,8 @@
 							<div class="card-body">
 
 								<!-- Button trigger modal -->
-								<button type="button" class="btn poster p-3" data-toggle="modal" data-target="#exampleModal">
+								<button type="button" class="btn poster p-3" data-toggle="modal"
+									data-target="#exampleModal">
 									What is on your mind ?
 								</button>
 							</div>
@@ -44,8 +46,8 @@
 
 
 					<!-- Modal -->
-					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-						aria-hidden="true">
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+						aria-labelledby="exampleModalLabel" aria-hidden="true">
 						<div class="modal-dialog" role="document">
 							<div class="modal-content">
 								<%= form_for(:post, url: posts_path) do |f| %>
