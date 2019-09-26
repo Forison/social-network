@@ -16,6 +16,7 @@ class PostsController < ApplicationController
       redirect_back fallback_location(pos)
     end
   end
+  
   private 
   def post_params
     params.require(:post).permit(:postcontent,:user_id, avatar: [])

@@ -13,12 +13,14 @@
 
 
 	<div class="left-nav-link d-flex">
-		<div class="one">
-			<a href="<%= user_path(current_user.id)%>"><img src="#"> <%= current_user.lastname.capitalize %></a>
+		<div class="one mt-0">
+			<a href="<%= user_path(current_user.id)%>">
+				<%= image_tag current_user.avatar.first, class: "img-fluid pp" %> <%= current_user.lastname.capitalize %>
+			</a>
 		</div>
 
 		<div class="one">
-			home
+			<%= link_to 'home', root_path %>
 		</div>
 
 		<div class="one">

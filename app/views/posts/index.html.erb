@@ -6,7 +6,8 @@
 		<div class="row">
 			<div class="col-2">
 				<div class="link-wrap p-1">
-					<a href="<%= user_path(current_user.id)%>"> <img src="" alt="name">
+					<a href="<%= user_path(current_user.id)%>">
+						<%= image_tag current_user.avatar.first, class: "img-fluid pp" %>
 						<%= current_user.firstname %></a> <br>
 
 					<div class="mt-2"><i class="fa fa-desktop"></i> some random link</div> <br>
@@ -31,8 +32,7 @@
 							<div class="card-body">
 
 								<!-- Button trigger modal -->
-								<button type="button" class="btn poster p-3" data-toggle="modal"
-									data-target="#exampleModal">
+								<button type="button" class="btn poster p-3" data-toggle="modal" data-target="#exampleModal">
 									What is on your mind ?
 								</button>
 							</div>
@@ -46,8 +46,8 @@
 
 
 					<!-- Modal -->
-					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-						aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
 						<div class="modal-dialog" role="document">
 							<div class="modal-content">
 								<%= form_for(:post, url: posts_path) do |f| %>
@@ -118,7 +118,9 @@
 									<% if p.avatar.empty? %>
 
 									<a href="#">
+										<%= image_tag current_user.avatar.first, class: "img-fluid pp" %>
 										<%= p.author.lastname.capitalize %> <%= p.author.firstname.capitalize %>
+
 									</a>
 									<i class="fa fa-ellipsis-h float-right"></i>
 									<div class="text-content p-1 mt-1">
@@ -128,6 +130,8 @@
 									<% else %>
 
 									<a href="#">
+
+										<%= image_tag current_user.avatar.first, class: "img-fluid pp" %>
 										<%= p.author.lastname.capitalize %> <%= p.author.firstname.capitalize %>
 									</a>
 									<i class="fa fa-ellipsis-h float-right"></i>
