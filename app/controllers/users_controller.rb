@@ -1,5 +1,4 @@
-class UsersaffairsController < ApplicationController
-	before_action :authenticate_user!
+class UsersController < ApplicationController
 	
 	def index 
 	  @users = User.all
