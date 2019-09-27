@@ -7,8 +7,14 @@
 			<div class="col-2">
 				<div class="link-wrap p-1">
 					<a href="<%= user_path(current_user.id)%>">
-						<%= image_tag current_user.avatar.first, class: "img-fluid pp" %>
-						<%= current_user.firstname %></a> <br>
+						<% if current_user.avatar.attached? %>
+						<%= image_tag current_user.avatar.first, class: "img-fluid profile-avatar" %>
+						<%= current_user.lastname.capitalize %>
+						<% else %>
+						<img src="<%= asset_path('default_avatar.png')%>" alt="default_avatar">
+						<%= current_user.lastname.capitalize %>
+						<% end %>
+					</a> <br>
 
 					<div class="mt-2"><i class="fa fa-desktop"></i> some random link</div> <br>
 					<span>Shortcut</span><br>
@@ -118,9 +124,13 @@
 									<% if p.avatar.empty? %>
 
 									<a href="#">
-										<%= image_tag current_user.avatar.first, class: "img-fluid pp" %>
-										<%= p.author.lastname.capitalize %> <%= p.author.firstname.capitalize %>
-
+										<% if p.author.avatar.attached? %>
+										<%= image_tag p.author.avatar.first, class: "img-fluid profile-avatar" %>
+										<%= p.author.lastname.capitalize %>
+										<% else %>
+										<img src="<%= asset_path('default_avatar.png')%>" alt="default_avatar">
+										<%= p.author.lastname.capitalize %>
+										<% end %>
 									</a>
 									<i class="fa fa-ellipsis-h float-right"></i>
 									<div class="text-content p-1 mt-1">
@@ -130,9 +140,13 @@
 									<% else %>
 
 									<a href="#">
-
-										<%= image_tag current_user.avatar.first, class: "img-fluid pp" %>
-										<%= p.author.lastname.capitalize %> <%= p.author.firstname.capitalize %>
+										<% if p.author.avatar.attached? %>
+										<%= image_tag p.author.avatar.first, class: "img-fluid profile-avatar" %>
+										<%= p.author.lastname.capitalize %>
+										<% else %>
+										<img src="<%= asset_path('default_avatar.png')%>" alt="default_avatar">
+										<%= p.author.lastname.capitalize %>
+										<% end %>
 									</a>
 									<i class="fa fa-ellipsis-h float-right"></i>
 									<div class="text-content p-1 mt-1">

@@ -14,23 +14,29 @@
 
 	<div class="left-nav-link d-flex">
 		<div class="one mt-0">
-			<a href="<%= user_path(current_user.id)%>">
-				<%= image_tag current_user.avatar.first, class: "img-fluid pp" %> <%= current_user.lastname.capitalize %>
+			<a href="<%= user_path(current_user.id)%>" , class='link' >
+				<% if current_user.avatar.attached? %>
+				<%= image_tag current_user.avatar.first, class: "img-fluid profile-avatar" %>
+				<%= current_user.lastname.capitalize %>
+				<% else %>
+				<%= image_tag asset_path('default_avatar.png'), class: "img-fluid profile-avatar" %>
+				<%= current_user.lastname.capitalize %></a>
+				<% end %>
 			</a>
 		</div>
 
 		<div class="one">
-			<%= link_to 'home', root_path %>
+			<%= link_to 'home', root_path, class: 'link' %>
 		</div>
 
 		<div class="one">
-			create
+			<%= link_to 'create', '#' , class: 'link' %>
 		</div>
 
 		<div class="one">
-			<i class="fa fa-users "></i>
-			<i class="	fa fa-commenting mr-2 ml-2"></i>
-			<i class="fa fa-bell"></i>
+			<i class="fa fa-users fa-sm"></i>
+			<i class="	fa fa-commenting mr-3 ml-3 fa-sm"></i>
+			<i class="fa fa-bell fa-md"></i>
 		</div>
 
 		<div class="five">
@@ -41,7 +47,7 @@
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
 				aria-haspopup="true" aria-expanded="false">
 			</a>
-			<div class="ml-auto dropdown-menu" aria-labelledby="navbarDropdown">
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 				<a class="dropdown-item" href="#">Advertising facebook</a>
 				<div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="#">Activity log</a>
