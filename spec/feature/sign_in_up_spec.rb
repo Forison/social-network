@@ -16,9 +16,9 @@ RSpec.feature 'login or sign up ' do
     end
   end
 
-  scenario 'visit and sign up' do 
+  scenario 'visit and sign up' do
     visit new_user_registration_path
-    within 'div#signup-form-wrap' do 
+    within 'div#signup-form-wrap' do
       fill_in 'user[lastname]', with: 'kofi'
       fill_in 'user[firstname]', with: 'ama'
       fill_in 'user[email]', with: 'ama@gmail.com'
@@ -31,5 +31,4 @@ RSpec.feature 'login or sign up ' do
       expect(page).to have_title('| facebook')
     end
   end
-
 end
