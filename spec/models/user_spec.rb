@@ -5,7 +5,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   describe 'Test User model validation' do
     it 'create new user' do
-      new_user = create(:user, lastname: 'ama', firstname: 'addo', dob: '1/1/1999', gender: 'female', email: 'ama@gmail.com', password: 'qwertyuiop', password_confirmation: 'qwertyuiop')
+      new_user = create(:user)
       expect(new_user).to be_valid
     end
 
