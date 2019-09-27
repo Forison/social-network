@@ -5,17 +5,14 @@
     <div class="row">
       <div class="col-2 p-0 mt-3">
         <div class="mx-auto profile-pic">
-          <% if current_user.avatar.attached? %> <%= image_tag
-          current_user.avatar.first, class: "img-fluid sho-profile-avatar" %> <%
-          else %> <%= image_tag asset_path('default_avatar.png'), class:
-          "img-fluid sho-profile-avatar" %> <% end %>
+          <% if current_user.avatar.attached? %>
+          <%= image_tag current_user.avatar.first, class: "img-fluid sho-profile-avatar" %>
+          <% else %>
+          <%= image_tag asset_path('default_avatar.png'), class:"img-fluid sho-profile-avatar" %>
+          <% end %>
         </div>
-        <a
-          href="<%= edit_user_registration_path %>"
-          class="btn btn-primary mt-5 d-block mx-auto"
-          href="#"
-          >Update profile</a
-        >
+        <a href="<%= edit_user_registration_path %>" class="btn btn-primary mt-5 d-block mx-auto" href="#">Update
+          profile</a>
       </div>
 
       <div class="col-5">
@@ -27,20 +24,12 @@
               </div>
               <div class="card-body">
                 <!-- Button trigger modal -->
-                <button
-                  type="button"
-                  class="btn poster p-3"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                >
+                <button type="button" class="btn poster p-3" data-toggle="modal" data-target="#exampleModal">
                   What is on your mind ?
                 </button>
               </div>
               <div class="card-footer">
-                <img
-                  src="<%= asset_path('uploader.png')%>"
-                  alt="photo-upload"
-                />
+                <img src="<%= asset_path('uploader.png')%>" alt="photo-upload" />
                 <img src="<%= asset_path('feeling.png')%>" alt="photo-upload" />
                 <img src="<%= asset_path('tag.png')%>" alt="photo-upload" />
               </div>
@@ -48,14 +37,8 @@
           </div>
 
           <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <%= form_for(:post, url: posts_path) do |f| %>
@@ -63,24 +46,17 @@
                   <h5 class="modal-title" id="exampleModalLabel">
                     Create Post
                   </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
 
                 <div class="modal-body">
                   <div class="field">
-                    <%= f.text_area :postcontent, placeholder: " What is on your
-                    mind ?", class: "form-control" %>
+                    <%= f.text_area :postcontent, placeholder: " What is on your mind ?", class: "form-control" %>
                   </div>
                   <div class="field">
-                    <%= f.file_field :avatar, multiple: true, placeholder: "
-                    attach image to post", class: "form-control" %>
+                    <%= f.file_field :avatar, multiple: true, placeholder: "attach image to post", class: "form-control" %>
                   </div>
                 </div>
                 <div class="modal-footer">
@@ -99,8 +75,7 @@
                   <% if p.avatar.empty? %>
 
                   <a href="#">
-                    <%= p.author.lastname.capitalize %> <%=
-                    p.author.firstname.capitalize %>
+                    <%= p.author.lastname.capitalize %> <%= p.author.firstname.capitalize %>
                   </a>
                   <i class="fa fa-ellipsis-h float-right"></i>
                   <div class="text-content p-1 mt-1">
@@ -110,14 +85,14 @@
                   <% else %>
 
                   <a href="#">
-                    <%= p.author.lastname.capitalize %> <%=
-                    p.author.firstname.capitalize %>
+                    <%= p.author.lastname.capitalize %> <%= p.author.firstname.capitalize %>
                   </a>
                   <i class="fa fa-ellipsis-h float-right"></i>
                   <div class="text-content p-1 mt-1">
                     <p><%= p.postcontent %></p>
                   </div>
-                  <%= image_tag p.avatar.first, class: "img-fluid " %> <% end %>
+                  <%= image_tag p.avatar.first, class: "img-fluid " %>
+                  <% end %>
                 </div>
               </div>
 

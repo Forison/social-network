@@ -9,8 +9,8 @@
         <p>It’s quick and easy.</p>
         <div id="signup_form-wrap">
           <%= form_for(resource, as: resource_name, url:
-          registration_path(resource_name)) do |f| %> <%= render
-          "devise/shared/error_messages", resource: resource %>
+          registration_path(resource_name)) do |f| %>
+          <%= render "devise/shared/error_messages", resource: resource %>
           <div class="names d-flex">
             <div class="field p-1">
               <%= f.text_field :lastname, autofocus: true, autocomplete:

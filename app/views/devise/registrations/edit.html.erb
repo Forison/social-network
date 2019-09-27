@@ -6,9 +6,8 @@
 <body>
   <div class="container">
     <%= form_for(resource, as: resource_name, url:
-    registration_path(resource_name), html: { method: :put }) do |f| %> <%=
-    render "devise/shared/error_messages", resource: resource %>
-
+    registration_path(resource_name), html: { method: :put }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
     <div class="row">
       <div class="col-8">
         <div class="field text-center">

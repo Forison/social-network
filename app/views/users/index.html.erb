@@ -7,12 +7,10 @@
         <% @users.each do | user |%>
         <div class="card">
           <div class="card-body d-flex">
-            <% if user.avatar.attached? %> <%= image_tag user.avatar.first, alt:
-            'user-pics',class: "img-fluid" %> <% else %>
-            <img
-              src="<%= asset_path('default_avatar.png') %>"
-              alt="user-pics"
-            />
+            <% if user.avatar.attached? %>
+            <%= image_tag user.avatar.first,alt:'user-pics',class: "img-fluid" %>
+            <% else %>
+            <img src="<%= asset_path('default_avatar.png') %>" alt="user-pics" />
             <% end %>
             <h3 class="mx-auto"><%= user.lastname %> <%= user.firstname %></h3>
             <button class="btn btn-primary ml-auto" style="height: 35px;">
