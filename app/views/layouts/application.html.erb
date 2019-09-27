@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html>
-<title><%= yield(:title)%> | facebook</title>
-<%= render 'components/header' %>
-<%= render 'components/shims' %>
+  <title><%= yield(:title)%> | facebook</title>
+  <%= render 'components/header' %> <%= render 'components/shims' %>
 
-<body>
-  <% if is_signup_path? || !user_signed_in? %>
-  <%= render 'components/signup_nav' %>
-  <% else %>
-  <%= render 'components/navi' %>
-  <% end %>
-
-  <%= render 'components/flash' %>
-  <%= yield %>
-</body>
-
+  <body>
+    <% if is_signup_path? || !user_signed_in? %> <%= render
+    'components/signup_nav' %> <% else %> <%= render 'components/navi' %> <% end
+    %> <%= render 'components/flash' %> <%= yield %>
+  </body>
 </html>
