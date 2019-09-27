@@ -1,11 +1,11 @@
-FactoryBot.define  do
+FactoryBot.define do
   factory :user, aliases: [:author] do
-    lastname {'addo'}
-    firstname {'kofi'}
+    lastname { "addo" }
+    firstname { "kofi" }
     email { "tester@example.com" }
-    dob {'12/12/1900'}
-    gender {'male'}
-    password {'ammorethansix'}
-    password_confirmation {'ammorethansix'}
+    dob { "12/12/1900" }
+    gender { "male" }
+    password { "ammorethansix" }
+    password_confirmation { "ammorethansix" }
   end
 end
