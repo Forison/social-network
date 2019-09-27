@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # frozen_string_literal: true.
 class PostsController < ApplicationController
   before_action :authenticate_user!
@@ -10,10 +12,10 @@ class PostsController < ApplicationController
   def create
     @post = current_user.posts.build(post_params)
     if @post.save
-      flash[:success] = "post was successfull"
+      flash[:success] = 'post was successfull'
       redirect_to root_path
     else
-      flash[:danger] = "error posting"
+      flash[:danger] = 'error posting'
       redirect_back fallback_location(pos)
     end
   end
