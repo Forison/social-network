@@ -1,13 +1,12 @@
-<nav class="d-flex signup_navbar">
-	<a href="#">facebook</a>
-	<div class="ml-auto mr-5 mt-3 sign-in-form">
-
-		<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-
-		<%= f.email_field :email, placeholder: "email" %>
-		<%= f.password_field :password, placeholder:'password' %>
-		<%= f.submit "Log In" , class: "ml-2" %>
-
-		<% end %>
-	</div>
+<nav class="d-flex fixed-top signup_navbar">
+  <a href="#">facebook</a>
+  <div class="ml-auto mr-5 mt-3 sign-in-form">
+    <div id="signin-form-wrap">
+      <%= form_for(resource, as: resource_name, url:
+      session_path(resource_name)) do |f| %> <%= f.email_field :email,
+      placeholder: "email" %> <%= f.password_field :password,
+      placeholder:'password' %> <%= f.submit "Log In" , class: "ml-2" %> <% end
+      %>
+    </div>
+  </div>
 </nav>

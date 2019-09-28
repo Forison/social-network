@@ -1,26 +1,69 @@
-<h2>Log in</h2>
+<%= provide(:title, 'sign up or in') %>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+<body class="sign-up-body ">
+  <div class="container">
+    <div class="row">
+      <div class="col-8"></div>
+      <div class="col-4 ">
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+        <h2>Create a New Account</h2>
+        <p>It’s quick and easy.</p>
+        <div id="signup_form-wrap">
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= render "devise/shared/error_messages", resource: resource %>
+          <div class="names d-flex">
+            <div class="field p-1">
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+              <%= f.text_field :lastname, autofocus: true, autocomplete: "lastname", placeholder: 'Lastname' ,class: 'form-control' %>
+            </div>
+            <div class="field p-1">
+
+              <%= f.text_field :firstname, autofocus: true, autocomplete: "firstname", placeholder: 'Firstname' ,class: 'form-control' %>
+            </div>
+          </div>
+          <div class="field p-1 mt-2">
+
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Mobile number or email' ,class: 'form-control' %>
+          </div>
+          <div class="field p-1 mt-2">
+
+            <%= f.password_field :password, autocomplete: "new-password" ,class: 'form-control', placeholder: "New password" %>
+          </div>
+          <div class="field p-1 mt-4">
+            <%= f.label :dob, "Birthday" %><br />
+            <%= f.date_field :dob, autofocus: true, class: 'form-control birthday' %>
+          </div>
+          <div class="field p-1 mt-2">
+            <%= f.label :gender, "Gender" %><br>
+
+            <div class="col-9 mr-auto">
+              <div class="d-flex justify-content-around">
+                <%= f.radio_button :gender, :value => 'female' %>
+                <span>Female</span>
+                <%= f.radio_button :gender, :value => 'male' %>
+                <span>Male</span>
+                <%= f.radio_button :gender, :value => 'custom' %>
+                <span>Custom</span> <i class="fa fa-question-circle" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <small>
+            By clicking Sign Up, you agree to our Terms,
+            Data Policy and Cookies Policy.
+            You may receive SMS Notifications
+            from us
+            and can opt out any time.
+          </small>
+
+          <div class="actions mt-3">
+            <%= f.submit "Sign up", class: "btn btn-success pl-5 pr-5" %>
+          </div>
+          <% end %>
+          <hr>
+          <small>Create a Page for a celebrity, band or business.</small>
+        </div>
+        <!-- <%= render "devise/shared/links" %> -->
+      </div>
     </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
   </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</body>

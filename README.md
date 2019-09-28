@@ -1,24 +1,47 @@
-# README
+# social network
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A practical implementation of rails for development of an app similar to [facebook](facebook.com)as part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ "The Global School for Remote Software Developers!").
 
-Things you may want to cover:
+## Technologies
 
-* Ruby version
+- HTML
+- CSS
+- Ruby
+- Ruby on Rails 
+- SASS
 
-* System dependencies
+## Usage
 
-* Configuration
+> Clone the repository to your local machine
 
-* Database creation
+```sh
+$ git clone https://github.com/forison/social-network.git
+```
 
-* Database initialization
+> cd into the directory
 
-* How to run the test suite
+```sh
+$ cd social-network
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+> open by issuing the command ```rails s```
 
-* Deployment instructions
+<!-- ## Deployment -->
 
-* ...
+<!-- The demo page can be found [HERE](https://forison.github.io/Using-Bootstrap/) -->
+
+## Designed and developed by
+
+[Boakye Addo Forison](https://github.com/Forison)
+
+## Contributing
+
+1. Fork it (https://github.com/forison/Using-Bootstrap/fork)
+2. Create your feature branch (git checkout -b feature/[choose-a-name])
+3. Commit your changes (git commit -am 'What this commit will fix/add')
+4. Push to the branch (git push origin feature/[chosen name])
+5. Create a new Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE.md) file for details
