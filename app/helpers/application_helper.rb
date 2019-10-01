@@ -8,7 +8,7 @@ module ApplicationHelper
     false
   end
 
-  def has_user_like_post?(one, two, three)
+  def user_like_post?(one, two, three)
     return true if Like.where(status: one).where(user_id: two).where(post_id: three).exists?
 
     false

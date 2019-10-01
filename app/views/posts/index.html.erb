@@ -165,7 +165,7 @@
 								</div>
 								<hr>
 								<div class="d-flex justify-content-around">
-									<% if has_user_like_post?( true, current_user.id, p.id ) == false %>
+									<% if user_like_post?( true, current_user.id, p.id ) == false %>
 									<i>
 										<%= form_for(@like, :url => likes_path,:remote => true )do | f | %>
 										<%= f.hidden_field :post_id, :value => "#{p.id}" %>

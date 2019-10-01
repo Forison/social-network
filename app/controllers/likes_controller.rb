@@ -5,11 +5,10 @@ class LikesController < ApplicationController
     @like = current_user.likes.build(like_params)
     if @like.save
       flash[:success] = 'post liked'
-      redirect_back fallback_location: @like
     else
       flash[:warning] = 'oops something went wrong'
-      redirect_back fallback_location: @like
     end
+    redirect_back fallback_location: @like
   end
 
   def destroy
