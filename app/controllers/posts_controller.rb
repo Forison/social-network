@@ -21,11 +21,13 @@ class PostsController < ApplicationController
       redirect_back fallback_location(pos)
     end
   end
+
   def show
     @like = Like.new
     @comment = Comment.new
     @post = Post.find(params[:id])
   end
+
   private
 
   def post_params
