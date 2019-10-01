@@ -5,6 +5,8 @@ class PostsController < ApplicationController
   before_action :authenticate_user!
 
   def index
+    @like = Like.new
+    @comment = Comment.new
     @post = Post.new
     @posts = Post.ordered_post
   end
@@ -19,7 +21,11 @@ class PostsController < ApplicationController
       redirect_back fallback_location(pos)
     end
   end
-
+  def show
+    @like = Like.new
+    @comment = Comment.new
+    @post = Post.find(params[:id])
+  end
   private
 
   def post_params
