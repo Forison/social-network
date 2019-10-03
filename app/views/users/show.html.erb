@@ -6,7 +6,7 @@
       <div class="col-2 p-0 mt-3">
         <div class="mx-auto profile-pic">
           <% if current_user.avatar.attached? %>
-          <%= image_tag current_user.avatar.first, class: "img-fluid sho-profile-avatar" %>
+          <%= image_tag current_user.avatar.reverse.first, class: "img-fluid sho-profile-avatar" %>
           <% else %>
           <%= image_tag asset_path('default_avatar.png'), class:"img-fluid sho-profile-avatar" %>
           <% end %>
@@ -79,7 +79,7 @@
                   </a>
                   <i class="fa fa-ellipsis-h float-right"></i>
                   <div class="text-content p-1 mt-1">
-                    <p><%= p.postcontent %></p>
+                    <p><%= p.postcontent[0..50]%><%= link_to '...more', post_path(p.id) %></p>
                   </div>
 
                   <% else %>
@@ -89,17 +89,31 @@
                   </a>
                   <i class="fa fa-ellipsis-h float-right"></i>
                   <div class="text-content p-1 mt-1">
-                    <p><%= p.postcontent %></p>
+                    <p><%= p.postcontent[0..50] %><%= link_to '...more', post_path(p.id) %></p>
                   </div>
                   <%= image_tag p.avatar.first, class: "img-fluid " %>
                   <% end %>
                 </div>
               </div>
-
-              <div class="card-footer d-flex justify-content-around">
-                <i class="fa fa-thumbs-up "> like</i>
-                <i class="fa fa-comment "> comment</i>
-                <i class="fa fa-share "> share</i>
+              <div class="card-footer">
+                <div class="d-flex justify-content-around">
+                  <% if !current_user.liked_posts.ids.include?(p.id) %>
+                  <i>
+                    <%= form_for(@like, :url => likes_path,:remote => true )do | f | %>
+                    <%= f.hidden_field :post_id, :value => "#{p.id}" %>
+                    <%= f.hidden_field :status, :value => true %>
+                    <%= f.submit "Like", class: "btn btn-info pl-5 pr-5" %>
+                    <% end %>
+                  </i>
+                  <% else %>
+                  <i>
+                    <%= link_to 'unlike', like_path(current_user.likes.ids ), class: 'btn btn-info pl-5 pr-5', method: :delete %>
+                  </i>
+                  <% end %>
+                  <a href="#" class="btn btn-info pl-4 pr-4"><i class="fa fa-comment ">
+                      comment</i></a>
+                  <a href="#" class="btn btn-info pl-5 pr-5"><i class="fa fa-share "> share</i></a>
+                </div>
               </div>
             </div>
           </div>
