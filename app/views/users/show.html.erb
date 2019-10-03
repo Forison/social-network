@@ -95,11 +95,25 @@
                   <% end %>
                 </div>
               </div>
-
-              <div class="card-footer d-flex justify-content-around">
-                <i class="fa fa-thumbs-up "> like</i>
-                <i class="fa fa-comment "> comment</i>
-                <i class="fa fa-share "> share</i>
+              <div class="card-footer">
+                <div class="d-flex justify-content-around">
+                  <% if !current_user.liked_posts.ids.include?(p.id) %>
+                  <i>
+                    <%= form_for(@like, :url => likes_path,:remote => true )do | f | %>
+                    <%= f.hidden_field :post_id, :value => "#{p.id}" %>
+                    <%= f.hidden_field :status, :value => true %>
+                    <%= f.submit "Like", class: "btn btn-info pl-5 pr-5" %>
+                    <% end %>
+                  </i>
+                  <% else %>
+                  <i>
+                    <%= link_to 'unlike', like_path(current_user.likes.ids ), class: 'btn btn-info pl-5 pr-5', method: :delete %>
+                  </i>
+                  <% end %>
+                  <a href="#" class="btn btn-info pl-4 pr-4"><i class="fa fa-comment ">
+                      comment</i></a>
+                  <a href="#" class="btn btn-info pl-5 pr-5"><i class="fa fa-share "> share</i></a>
+                </div>
               </div>
             </div>
           </div>

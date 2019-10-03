@@ -38,8 +38,7 @@
 							<div class="card-body">
 
 								<!-- Button trigger modal -->
-								<button type="button" class="btn poster p-3" data-toggle="modal"
-									data-target="#exampleModal">
+								<button type="button" class="btn poster p-3" data-toggle="modal" data-target="#exampleModal">
 									What is on your mind ?
 								</button>
 							</div>
@@ -53,8 +52,8 @@
 
 
 					<!-- Modal -->
-					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-						aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
 						<div class="modal-dialog" role="document">
 							<div class="modal-content">
 								<%= form_for(:post, url: posts_path) do |f| %>
@@ -165,7 +164,7 @@
 								</div>
 								<hr>
 								<div class="d-flex justify-content-around">
-									<% if user_like_post?( true, current_user.id, p.id ) == false %>
+									<% if !current_user.liked_posts.ids.include?(p.id)  %>
 									<i>
 										<%= form_for(@like, :url => likes_path,:remote => true )do | f | %>
 										<%= f.hidden_field :post_id, :value => "#{p.id}" %>
@@ -175,7 +174,7 @@
 									</i>
 									<% else %>
 									<i>
-										<%= link_to 'unlike', like_path(unlike_id(true, current_user.id, p.id) ), class: 'btn btn-info pl-5 pr-5', method: :delete %>
+										<%= link_to 'unlike', like_path(current_user.likes.ids ), class: 'btn btn-info pl-5 pr-5', method: :delete %>
 									</i>
 									<% end %>
 									<a href="#" class="btn btn-info pl-4 pr-4"><i class="fa fa-comment ">
@@ -187,8 +186,8 @@
 
 							<div class="card-footer d-flex justify-content-between">
 								<aside class="left">
-									<% if p.author.avatar.attached? %>
-									<%= image_tag p.author.avatar.first, class: "img-fluid profile-avatar" %>
+									<% if current_user.avatar.attached? %>
+									<%= image_tag current_user.avatar.reverse.first, class: "img-fluid profile-avatar" %>
 									<% else %>
 									<img src="<%= asset_path('default_avatar.png')%>" alt="default_avatar">
 									<% end %>

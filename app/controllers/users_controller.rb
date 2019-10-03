@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @like = Like.new
     @user = User.find(params[:id])
     @post = Post.new
     @posts = @user.posts.reverse

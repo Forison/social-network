@@ -11,6 +11,7 @@ require 'support/factory_bot'
 require 'database_cleaner'
 require 'capybara/rspec'
 require 'support/helper'
+
 # Add additional requires below this line. Rails is not loaded until this point!
 # shoulda gem configuration
 Shoulda::Matchers.configure do |config|
