@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
 	<a href="<%= root_path%>" class="navbar-brand"><i class="fa fa-facebook-official fa-2x"></i></a>
 
-	<form class="form-inline" method='get' action="<%= user_path(:search) %>">
+	<form class="form-inline" method='get' action="<%= search_path(:search) %>">
 		<div class="input-group">
 			<input type="text" name='search' class="form-control" placeholder="search" style="width: 320px;height:30px">
 			<div class="input-group-prepend">
@@ -34,7 +34,7 @@
 		</div>
 
 		<div class="one">
-			<i class="fa fa-users fa-sm"></i>
+			<a href="<%= users_path %>"><i class="fa fa-users fa-sm"></i></a>
 			<i class="	fa fa-commenting mr-3 ml-3 fa-sm"></i>
 			<i class="fa fa-bell fa-md"></i>
 		</div>
