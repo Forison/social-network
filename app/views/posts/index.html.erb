@@ -126,7 +126,7 @@
 
 									<a href="#">
 										<% if p.author.avatar.attached? %>
-										<%= image_tag p.author.avatar.first, class: "img-fluid profile-avatar" %>
+										<%= image_tag p.author.avatar.reverse.first, class: "img-fluid profile-avatar" %>
 										<%= p.author.lastname.capitalize %>
 										<% else %>
 										<img src="<%= asset_path('default_avatar.png')%>" alt="default_avatar">
