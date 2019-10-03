@@ -10,7 +10,7 @@
 						<p><%= @post.postcontent %></p>
 						<br>
 						<div class="tally-table d-flex justify-content-around">
-							<small><%= @post.likes.where(status: true).count %> like(s)</small>
+							<small><%= @post.likes.count %> like(s)</small>
 							<small><%= @post.comments.count %> comment(s)</small>
 						</div>
 					</div>
