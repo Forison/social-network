@@ -17,13 +17,6 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
   has_many :liked_posts, through: :likes, source: 'post'
-
-  # def user_like_post?(one, two, three)
-  #   return true if Like.where(status: one).where(user_id: two).where(post_id: three).exists?
-  #   false
-  # end
-
-  # def unlike_id(one, two, three)
-  #   Like.where(status: one).where(user_id: two).where(post_id: three).ids
-  # end
+  has_many :friendships
+  has_many :inverted_friendships, class_name: 'Friendship', foreign_key: 'friend_id'
 end
