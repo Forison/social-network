@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :like do
-    user { nil }
-    post { nil }
+    user_id { nil }
+    post_id { nil }
   end
 end
