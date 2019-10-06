@@ -33,10 +33,16 @@
 			<%= link_to 'create', '#' , class: 'link' %>
 		</div>
 
-		<div class="one">
+		<div class="one d-flex">
 			<a href="<%= users_path %>"><i class="fa fa-users fa-sm"></i></a>
 			<i class="	fa fa-commenting mr-3 ml-3 fa-sm"></i>
-			<i class="fa fa-bell fa-md"></i>
+			<!-- Button trigger modal -->
+			<div>
+				<button type="button" class="fa fa-bell fa-md notify-count-but" data-toggle="modal"
+					data-target="#notification">
+				</button>
+				<small data-toggle="modal" data-target="#notification" class="notify-count">100</small>
+			</div>
 		</div>
 
 		<div class="five">

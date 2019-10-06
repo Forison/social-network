@@ -5,6 +5,9 @@ class PostsController < ApplicationController
   before_action :authenticate_user!
 
   def index
+    receiver = current_user.inverted_friendships.pluck('user_id')
+    @recieved_request = User.find(receiver)
+    @path_id = current_user.inverted_friendships.ids
     @like = Like.new
     @comment = Comment.new
     @post = Post.new
@@ -18,11 +21,13 @@ class PostsController < ApplicationController
       redirect_to root_path
     else
       flash[:danger] = 'error posting'
-      redirect_back fallback_location(pos)
+      redirect_back fallback_location @post
     end
   end
 
   def show
+    receiver = current_user.inverted_friendships.pluck('user_id')
+    @recieved_request = User.find(receiver)
     @like = Like.new
     @comment = Comment.new
     @post = Post.find(params[:id])

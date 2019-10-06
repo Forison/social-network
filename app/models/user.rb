@@ -4,6 +4,8 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  default_scope {order(created_at: :desc)}
+  before_save :capitalize_names
   validates :lastname, presence: true
   validates :firstname, presence: true
   validates :dob, presence: true
@@ -19,4 +21,10 @@ class User < ApplicationRecord
   has_many :liked_posts, through: :likes, source: 'post'
   has_many :friendships
   has_many :inverted_friendships, class_name: 'Friendship', foreign_key: 'friend_id'
+  scope :all_except, ->(me) { where.not(id: me) }
+  private
+  def capitalize_names
+    self.lastname = lastname.capitalize
+    self.lastname = firstname.capitalize
+  end
 end

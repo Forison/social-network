@@ -1,3 +1,5 @@
+<%= provide(:title,'show post') %>
+
 <body>
 	<div class="container">
 		<div class="row">
@@ -17,7 +19,7 @@
 
 					<div class="card-footer">
 						<div class="d-flex justify-content-around">
-							<% if !current_user.liked_posts.ids.include?(p.id) %>
+							<% if !current_user.liked_posts.ids.include?(@post.id) %>
 							<i>
 								<%= form_for(@like, :url => likes_path,:remote => true )do | f | %>
 								<%= f.hidden_field :post_id, :value => "#{@post.id}" %>

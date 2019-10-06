@@ -72,6 +72,12 @@ img[alt="user-pics"]{
     border: 1px solid #444;
     border-radius: 100%;
 }
+img[alt="user-pics-2"]{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #444;
+    border-radius: 100%;
+}
 .searcher{
     height: 35px;
 }
@@ -99,4 +105,24 @@ img[alt="user-pics"]{
 .my-pic{
     width: 250px;
     height: 150px;
+}
+.notify-count{
+    position: absolute;
+    transform: translate(-14px,-3px);
+    z-index: 1;
+    font-weight: 700;
+    background: red;
+    border-radius: 25%;
+    color: white;
+    padding: 0.5px;
+}
+.notify-count-but{
+    background: #0000b2;
+    border: 0;
+}
+.notify-name{
+    font-size: 1rem;
+}
+.butt{
+    height: 30px;
 }

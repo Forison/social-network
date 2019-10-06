@@ -14,9 +14,17 @@
               <img src="<%= asset_path('default_avatar.png') %>" alt="user-pics" />
               <% end %>
               <h3 class="mx-auto mt-4"><%= user.lastname %> <%= user.firstname %></h3>
-              <button class="btn btn-primary ml-auto btn-sm mt-3" style="height: 35px;">
-                Add Friend
+              <% if @sent_request.include?(user.id)  %>
+              <button class="btn btn-warning ml-1 btn-sm mt-3" style="height: 35px;">
+                Pending
               </button>
+              <% else %>
+              <%= form_for(@friendship, :url => friendships_path,:remote => true )do | f | %>
+              <%= f.hidden_field :friend_id, :value => user.id %>
+              <%= f.hidden_field :confirmed, :value => false %>
+              <%= f.submit "Add friend", class: "btn btn-primary ml-1 btn-sm mt-3" %>
+              <% end %>
+              <% end %>
               <button class="btn btn-default ml-1 btn-sm mt-3" style="height: 35px;">
                 Remove
               </button>
