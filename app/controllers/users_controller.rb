@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   def show
     receiver = current_user.inverted_friendships.pluck('user_id')
     @recieved_request = User.find(receiver)
+    @path_id = current_user.inverted_friendships.ids
     @like = Like.new
     @user = User.find(params[:id])
     @post = Post.new

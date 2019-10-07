@@ -3,9 +3,10 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="mx-auto col-7">
+      <div class="mx-auto col-6">
         <% @users.each do | user |%>
         <div class="card">
+          <% if !current_user.approved_friend.include?(user.id) %>
           <div class="card-body pt-1 pb-1">
             <div class="d-flex mt-2">
               <% if user.avatar.attached? %>
@@ -13,7 +14,7 @@
               <% else %>
               <img src="<%= asset_path('default_avatar.png') %>" alt="user-pics" />
               <% end %>
-              <h3 class="mx-auto mt-4"><%= user.lastname %> <%= user.firstname %></h3>
+              <h3 class="mx-auto mt-4"><%= user.names %></h3>
               <% if @sent_request.include?(user.id)  %>
               <button class="btn btn-warning ml-1 btn-sm mt-3" style="height: 35px;">
                 Pending
@@ -30,6 +31,7 @@
               </button>
             </div>
           </div>
+          <% end %>
         </div>
         <% end %>
       </div>

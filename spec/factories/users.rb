@@ -2,7 +2,7 @@
 
 # frozen_string_literal: true.
 FactoryBot.define do
-  factory :user, aliases: [:author,:commentator] do
+  factory :user, aliases: %i[author commentator] do
     lastname { 'addo' }
     firstname { 'kofi' }
     sequence(:email) { |n| "tester#{n}@example.com" }

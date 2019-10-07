@@ -41,7 +41,11 @@
 				<button type="button" class="fa fa-bell fa-md notify-count-but" data-toggle="modal"
 					data-target="#notification">
 				</button>
-				<small data-toggle="modal" data-target="#notification" class="notify-count">100</small>
+				<% if @recieved_request.count > 0 %>
+				<small data-toggle="modal" data-target="#notification" class="notify-count">
+					<%= @recieved_request.count %>
+				</small>
+				<% end %>
 			</div>
 		</div>
 
@@ -53,7 +57,7 @@
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
 				aria-haspopup="true" aria-expanded="false">
 			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<div class="dropdown-menu " aria-labelledby="navbarDropdown">
 				<a class="dropdown-item" href="#">Advertising facebook</a>
 				<div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="#">Activity log</a>

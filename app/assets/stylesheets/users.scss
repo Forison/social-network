@@ -69,13 +69,11 @@ small{
 img[alt="user-pics"]{
     width: 80px;
     height: 80px;
-    border: 1px solid #444;
     border-radius: 100%;
 }
 img[alt="user-pics-2"]{
     width: 40px;
     height: 40px;
-    border: 1px solid #444;
     border-radius: 100%;
 }
 .searcher{
@@ -114,7 +112,7 @@ img[alt="user-pics-2"]{
     background: red;
     border-radius: 25%;
     color: white;
-    padding: 0.5px;
+    padding: 0.5px 1.8px 0.5px 1.8px;
 }
 .notify-count-but{
     background: #0000b2;
@@ -125,4 +123,9 @@ img[alt="user-pics-2"]{
 }
 .butt{
     height: 30px;
+}
+img[alt='friend-pics']{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
 }
