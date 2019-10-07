@@ -49,4 +49,21 @@ RSpec.describe User, type: :model do
       expect(user.password).to eql(user.password_confirmation)
     end
   end
+  describe '.all_except' do
+    it 'return all user record except the current user' do
+      expect(described_class.all_except(@user)).not_to include(@user)
+    end
+  end
+  describe '#names' do
+    it 'return concat lastname and firstname' do
+      user = create(:user)
+      expect(user.names).to eql("#{user.lastname} #{user.firstname}")
+    end
+  end
+  describe '#find_friend' do
+    it 'return desired user' do
+      user = create(:user)
+      expect(user.find_friend(user.id)).to eql(user)
+    end
+  end
 end

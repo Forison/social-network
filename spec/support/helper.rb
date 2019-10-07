@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def log_in(user)
-  visit new_user_session_path
+  visit 'users/sign_in'
   within 'div#signin-form-wrap' do
     fill_in 'user[email]', with: user.email
     fill_in 'user[password]', with: user.password
