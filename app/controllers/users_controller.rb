@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# frozen_string_literal: true.
 class UsersController < ApplicationController
   def index
     @sent_request = current_user.friendships.pluck('friend_id')

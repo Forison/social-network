@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# frozen_string_literal: true.
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
@@ -25,18 +24,23 @@ class User < ApplicationRecord
   def names
     "#{lastname} #{firstname}"
   end
+
   def all_friends
     receive_request = inverted_friendships.where(confirmed: 'true')
-    sent_request    = friendships.where(confirmed: 'true')
+    sent_request = friendships.where(confirmed: 'true')
     receive_request + sent_request
   end
+
   def approved_friend
-    all_friends.map { | a | a.user_id }
+    all_friends.map(&:user_id)
   end
+
   def find_friend(hello)
-    User.find( hello )
+    User.find(hello)
   end
+
   private
+
   def capitalize_names
     self.lastname = lastname.capitalize
     self.lastname = firstname.capitalize

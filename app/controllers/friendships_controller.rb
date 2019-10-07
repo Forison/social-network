@@ -2,15 +2,13 @@
 
 class FriendshipsController < ApplicationController
   def create
-    unless params[:confirmed]
-      @friendship = current_user.friendships.build(friend_params)
-      if @friendship.save
-        flash[:success] = 'request sent'
-      else
-        flash[:danger] = 'oops!! request failed'
-      end
-      redirect_to users_path
+    @friendship = current_user.friendships.build(friend_params)
+    if @friendship.save
+      flash[:success] = 'request sent'
+    else
+      flash[:danger] = 'oops!! request failed'
     end
+    redirect_to users_path
   end
 
   def update
