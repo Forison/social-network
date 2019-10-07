@@ -117,7 +117,7 @@
 
 					</div>
 
-					<% @posts.each do | p | %>
+					<% current_user.and_friends.each do | p | %>
 					<div class="posted">
 						<div class="card mt-2">
 							<div class="card-body">

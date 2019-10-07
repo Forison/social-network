@@ -21,6 +21,9 @@ class User < ApplicationRecord
   has_many :friendships
   has_many :inverted_friendships, class_name: 'Friendship', foreign_key: 'friend_id'
   scope :all_except, ->(me) { where.not(id: me) }
+  has_many :confirmed_friendships, -> { where confirmed: true }, class_name: 'Friendship'
+  has_many :friends, through: :confirmed_friendships
+
   def names
     "#{lastname} #{firstname}"
   end
@@ -39,10 +42,14 @@ class User < ApplicationRecord
     User.find(hello)
   end
 
+  def and_friends
+    Post.where(user_id: friends) + Post.where(user_id: self)
+  end
+
   private
 
   def capitalize_names
     self.lastname = lastname.capitalize
-    self.lastname = firstname.capitalize
+    self.firstname = firstname.capitalize
   end
 end

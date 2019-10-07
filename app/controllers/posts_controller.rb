@@ -11,7 +11,6 @@ class PostsController < ApplicationController
     @like = Like.new
     @comment = Comment.new
     @post = Post.new
-    @posts = Post.ordered_post
   end
 
   def create
