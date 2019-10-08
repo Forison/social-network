@@ -24,7 +24,7 @@ class User < ApplicationRecord
   has_many :inverted_friendships, class_name: 'Friendship', foreign_key: 'friend_id'
   scope :all_except, ->(me) { where.not(id: me) }
   has_many :confirmed_friendships, -> { where confirmed: true }, class_name: 'Friendship'
-  has_many :friends, through: :confirmed_friendships
+  has_many :friends, through: :confirmed_friendships, source: 'user'
 
   def names
     "#{lastname} #{firstname}"
@@ -37,7 +37,9 @@ class User < ApplicationRecord
   end
 
   def approved_friend
-    all_friends.map(&:user_id)
+    me = all_friends.map(&:user_id)
+    you = all_friends.map(&:friend_id)
+    (me + you).uniq - [id]
   end
 
   def find_friend(hello)
@@ -49,6 +51,10 @@ class User < ApplicationRecord
   end
 
   def pending_friends_arr
+    pending_friends.ids
+  end
+
+  def approved_friends_arr
     pending_friends.ids
   end
 
