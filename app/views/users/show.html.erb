@@ -123,7 +123,6 @@
 
       <div class="col-3">
         <div class="card">
-          <%= current_user.friends%>
           <div class="card-header"> My Friends </div>
           <% current_user.find_friend(current_user.approved_friend).each do | myfriend | %>
           <div class="card-body">
@@ -137,9 +136,13 @@
               </span>
               <a href="#"> unfriend </a>
             </div>
-            <p class="text-center"><%= pluralize(myfriend.find_friend(myfriend.approved_friend).count, 'Friend') %></p>
+            <p class="text-center">
+              <small><%= pluralize(current_user.find_friend(current_user.approved_friend).count,'Friend') %></small>
+              <br><small><%= pluralize(current_user.mutual_friend_count(myfriend),'mutual friend') %></small>
+            </p>
             <hr>
           </div>
+
           <% end %>
         </div>
       </div>
