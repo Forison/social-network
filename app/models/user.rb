@@ -20,6 +20,7 @@ class User < ApplicationRecord
   has_many :liked_posts, through: :likes, source: 'post'
   has_many :friendships
   has_many :inverted_friendships, class_name: 'Friendship', foreign_key: 'friend_id'
+  has_many :received_but_unconfirmed, -> { where confirmed: false }, class_name: 'Friendship', foreign_key: 'friend_id'
   scope :all_except, ->(me) { where.not(id: me) }
   def names
     "#{lastname} #{firstname}"
@@ -43,6 +44,6 @@ class User < ApplicationRecord
 
   def capitalize_names
     self.lastname = lastname.capitalize
-    self.lastname = firstname.capitalize
+    self.firstname = firstname.capitalize
   end
 end
