@@ -125,15 +125,19 @@
         <div class="card">
           <div class="card-header"> My Friends </div>
           <% current_user.find_friend(current_user.approved_friend).each do | myfriend | %>
-          <div class="card-body d-flex">
-            <% if myfriend.avatar.attached? %>
-            <%= image_tag myfriend.avatar.first,alt:'friend-pics',class: "img-fluid" %>
-            <% else %>
-            <img src="<%= asset_path('default_avatar.png') %>" alt="friend-pics" />
-            <% end %>
-            <span class="text-capitalize mx-auto"><%= myfriend.names %>
-            </span>
-            <a href="#"> unfriend </a>
+          <div class="card-body">
+            <div class="d-flex">
+              <% if myfriend.avatar.attached? %>
+              <%= image_tag myfriend.avatar.first,alt:'friend-pics',class: "img-fluid" %>
+              <% else %>
+              <img src="<%= asset_path('default_avatar.png') %>" alt="friend-pics" />
+              <% end %>
+              <span class="text-capitalize mx-auto"><%= myfriend.names %>
+              </span>
+              <a href="#"> unfriend </a>
+            </div>
+            <p class="text-center"><%= myfriend.find_friend(myfriend.approved_friend).count %></p>
+            <hr>
           </div>
           <% end %>
         </div>

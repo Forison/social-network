@@ -19,6 +19,8 @@ class User < ApplicationRecord
   has_many :likes, dependent: :destroy
   has_many :liked_posts, through: :likes, source: 'post'
   has_many :friendships
+  has_many :received_but_unconfirmed, -> { where confirmed: false }, class_name: 'Friendship', foreign_key: 'friend_id'
+  has_many :pending_friends, through: :received_but_unconfirmed, source: 'user'
   has_many :inverted_friendships, class_name: 'Friendship', foreign_key: 'friend_id'
   scope :all_except, ->(me) { where.not(id: me) }
   has_many :confirmed_friendships, -> { where confirmed: true }, class_name: 'Friendship'
@@ -43,7 +45,11 @@ class User < ApplicationRecord
   end
 
   def and_friends
-    Post.where(user_id: friends) + Post.where(user_id: self)
+    Post.where(user_id: self) + Post.where(user_id: friends)
+  end
+
+  def pending_friends_arr
+    pending_friends.ids
   end
 
   private

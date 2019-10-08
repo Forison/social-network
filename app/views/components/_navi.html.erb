@@ -41,9 +41,9 @@
 				<button type="button" class="fa fa-bell fa-md notify-count-but" data-toggle="modal"
 					data-target="#notification">
 				</button>
-				<% if @recieved_request != nil && @recieved_request.count > 0 %>
+				<% if current_user.received_but_unconfirmed.count > 0 %>
 				<small data-toggle="modal" data-target="#notification" class="notify-count">
-					<%= @recieved_request.count %>
+					<%= current_user.received_but_unconfirmed.count %>
 				</small>
 				<% end %>
 			</div>
