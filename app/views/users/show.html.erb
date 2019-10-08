@@ -138,10 +138,11 @@
             </div>
             <p class="text-center">
               <small><%= pluralize(current_user.find_friend(current_user.approved_friend).count,'Friend') %></small>
+              <br><small><%= pluralize(current_user.mutual_friend_count(myfriend),'mutual friend') %></small>
             </p>
             <hr>
           </div>
-          
+
           <% end %>
         </div>
       </div>

@@ -42,6 +42,16 @@ class User < ApplicationRecord
     (me + you).uniq - [id]
   end
 
+  def mutual_friend(myfriend)
+    me = approved_friend
+    you = myfriend.approved_friend
+    me & you
+  end
+
+  def mutual_friend_count(myfriend)
+    mutual_friend(myfriend).count
+  end
+
   def find_friend(hello)
     User.find(hello)
   end
