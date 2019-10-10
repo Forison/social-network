@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.feature 'visit general feed' do
   before do
-    @user_1 = create(:user)
+    @user_one = create(:user)
     @user = create(:user)
     @auth_user = log_in @user
   end
@@ -23,7 +23,8 @@ RSpec.feature 'visit general feed' do
     expect(page).to have_css('#post-my-profile-edit')
   end
   scenario 'visit my update profile' do
-    visit users_path 
+    visit users_path
+
     click_on 'Add friend'
     expect(page).to have_text('Pending')
   end
