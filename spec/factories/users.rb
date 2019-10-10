@@ -10,5 +10,8 @@ FactoryBot.define do
     gender { 'male' }
     password { 'ammorethansix' }
     password_confirmation { 'ammorethansix' }
+    trait :with_avatar do
+      avatar { Rack::Test::UploadedFile.new(Rails.root.to_s + '/spec/support/assets/test.jpg', 'img/jpg') }
+    end
   end
 end

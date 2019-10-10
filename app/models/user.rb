@@ -30,15 +30,15 @@ class User < ApplicationRecord
     "#{lastname} #{firstname}"
   end
 
-  def all_friends
+  def sent_and_received_requests
     receive_request = inverted_friendships.where(confirmed: 'true')
     sent_request = friendships.where(confirmed: 'true')
     receive_request + sent_request
   end
 
   def approved_friend
-    me = all_friends.map(&:user_id)
-    you = all_friends.map(&:friend_id)
+    me = sent_and_received_requests.map(&:user_id)
+    you = sent_and_received_requests.map(&:friend_id)
     (me + you).uniq - [id]
   end
 
@@ -65,7 +65,7 @@ class User < ApplicationRecord
   end
 
   def approved_friends_arr
-    pending_friends.ids
+    friends.ids
   end
 
   private
