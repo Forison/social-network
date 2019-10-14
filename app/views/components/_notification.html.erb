@@ -1,4 +1,4 @@
-<div class="modal fade p-5" id="notification" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<section class="modal fade p-5" id="notification" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 	aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -20,6 +20,7 @@
 					<img src="<%= asset_path('default_avatar.png') %>" alt="user-pics-2" />
 					<% end %>
 					<h3 class="mx-auto notify-name"><%= user.lastname %> <%= user.firstname %></h3>
+					<button> Accept </button>
 					<%= link_to 'Accept', friendship_path(@path_id.pop), {:style =>'height: 30px',:class =>'btn btn-light ml-1 btn-sm mt-1', :method => 'put'} %>
 					<%= link_to 'Discard', '#', {:style =>'height: 30px',:class =>'btn btn-secondary ml-1 btn-sm mt-1'} %>
 				</div>
@@ -32,4 +33,4 @@
 			<hr>
 		</div>
 	</div>
-</div>
+</section>

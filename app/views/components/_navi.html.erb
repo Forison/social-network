@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-light ">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light " id="nav">
 	<a href="<%= root_path%>" class="navbar-brand"><i class="fa fa-facebook-official fa-2x"></i></a>
 
 	<form class="form-inline" method='get' action="<%= search_path(:search) %>">
@@ -38,7 +38,7 @@
 			<i class="	fa fa-commenting mr-3 ml-3 fa-sm"></i>
 			<!-- Button trigger modal -->
 			<div>
-				<button type="button" class="fa fa-bell fa-md notify-count-but" data-toggle="modal"
+				<button id="bell" type="button" class="fa fa-bell fa-md notify-count-but" data-toggle="modal"
 					data-target="#notification">
 				</button>
 				<% if current_user.received_but_unconfirmed.count > 0 %>

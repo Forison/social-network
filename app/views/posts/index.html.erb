@@ -38,8 +38,7 @@
 							<div class="card-body">
 
 								<!-- Button trigger modal -->
-								<button type="button" class="btn poster p-3" data-toggle="modal"
-									data-target="#exampleModal">
+								<button type="button" class="btn poster p-3" data-toggle="modal" data-target="#exampleModal">
 									What is on your mind ?
 								</button>
 							</div>
@@ -53,8 +52,8 @@
 
 
 					<!-- Modal -->
-					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-						aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
 						<div class="modal-dialog" role="document">
 							<div class="modal-content">
 								<%= form_for(:post, url: posts_path) do |f| %>
@@ -160,8 +159,8 @@
 								</div>
 								<br>
 								<div class="tally-table d-flex justify-content-around">
-									<small><%= p.likes.count %>like(s)</small>
-									<small><%= p.comments.count %>comment(s)</small>
+									<small><%= pluralize(p.likes.count,'like') %></small>
+									<small><%= pluralize(p.comments.count,'comment') %></small>
 								</div>
 								<hr>
 								<div class="d-flex justify-content-around">
@@ -197,6 +196,7 @@
 									<%= form_for(@comment, :url => comments_path,:remote => true )do | f | %>
 									<%= f.hidden_field :post_id, :value => "#{p.id}" %>
 									<%= f.text_field :commentary, placeholder: "say something", class: 'form-control right-input' %>
+									<%= f.submit :send, class: 'd-none' %>
 									<% end %>
 								</aside>
 							</div><br>
