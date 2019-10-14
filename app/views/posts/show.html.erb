@@ -50,6 +50,7 @@
 								<%= form_for(@comment, :url => comments_path,:remote => true )do | f | %>
 								<%= f.hidden_field :post_id, :value => "#{@post.id}" %>
 								<%= f.text_field :commentary, placeholder: "say something", class: 'form-control right-input' %>
+								<%= f.submit :send, class: 'd-none' %>
 								<% end %>
 							</aside>
 						</div><br>

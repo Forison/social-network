@@ -16,7 +16,7 @@ RSpec.feature 'visit general feed' do
   end
   scenario 'Accept friend request' do
     visit root_path
-    within "nav#nav" do
+    within 'nav#nav' do
       click_button 'bell'
     end
     expect(page).to have_css '#notification'
