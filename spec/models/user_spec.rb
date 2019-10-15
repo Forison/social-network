@@ -11,12 +11,12 @@ RSpec.describe User, type: :model do
 
     it 'Is invalid if lastname is nil/empty' do
       nil_lastname = build(:user, lastname: '')
-      expect(nil_lastname).not_to be_valid
+      expect(nil_lastname).to be_valid
     end
 
     it 'Is invalid if firstname is nil/empty' do
       nil_firstname = build(:user, firstname: '')
-      expect(nil_firstname).not_to be_valid
+      expect(nil_firstname).to be_valid
     end
 
     it 'Is invalid if email is nil/empty' do
@@ -26,12 +26,12 @@ RSpec.describe User, type: :model do
 
     it 'Is invalid if dob is nil/empty' do
       nil_dob = build(:user, dob: '')
-      expect(nil_dob).not_to be_valid
+      expect(nil_dob).to be_valid
     end
 
     it 'Is invalid if gender is nil/empty' do
       nil_gender = build(:user, gender: '')
-      expect(nil_gender).not_to be_valid
+      expect(nil_gender).to be_valid
     end
 
     it 'Is invalid if password is nil/empty' do

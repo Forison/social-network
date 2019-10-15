@@ -1,7 +1,7 @@
 <%= provide(:title, 'sign up or in') %>
 
-<body class="sign-up-body ">
-  <div class="container">
+<body class="sign-up-body">
+  <div class="container " id="signup-form-wrap">
     <div class="row">
       <div class="col-8"></div>
       <div class="col-4 ">
@@ -55,8 +55,9 @@
             and can opt out any time.
           </small>
 
-          <div class="actions mt-3">
+          <div class="actions mt-3 d-flex">
             <%= f.submit "Sign up", class: "btn btn-success pl-5 pr-5" %>
+            <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, class: "btn btn-primary ml-auto" %>
           </div>
           <% end %>
           <hr>
