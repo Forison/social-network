@@ -73,6 +73,7 @@ class User < ApplicationRecord
       user.firstname = auth.info.first_name
     end
   end
+
   private
 
   def capitalize_names
