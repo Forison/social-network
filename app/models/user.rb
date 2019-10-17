@@ -34,13 +34,8 @@ class User < ApplicationRecord
   end
 
   def approved_friend
-<<<<<<< HEAD
     me = sent_and_received_requests.map(&:user_id)
     you = sent_and_received_requests.map(&:friend_id)
-=======
-    me = all_friends.map(&:user_id)
-    you = all_friends.map(&:friend_id)
->>>>>>> 8c66012e77e07cc8fcd172bcefe25d7582c00772
     (me + you).uniq - [id]
   end
 
@@ -67,8 +62,7 @@ class User < ApplicationRecord
   end
 
   def approved_friends_arr
-<<<<<<< HEAD
-    friends.ids
+    pending_friends.ids
   end
 
   def self.from_omniauth(auth)
@@ -78,9 +72,6 @@ class User < ApplicationRecord
       user.lastname = auth.info.last_name
       user.firstname = auth.info.first_name
     end
-=======
-    pending_friends.ids
->>>>>>> 8c66012e77e07cc8fcd172bcefe25d7582c00772
   end
 
   private
