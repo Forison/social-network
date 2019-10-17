@@ -17,7 +17,6 @@ A practical implementation of rails for development of an app similar to [facebo
 ```sh
 $ git clone https://github.com/forison/social-network.git
 ```
-
 > cd into the directory
 
 ```sh
@@ -26,9 +25,9 @@ $ cd social-network
 
 > open by issuing the command ```rails s```
 
-<!-- ## Deployment -->
+## Deployment
 
-<!-- The demo page can be found [HERE](https://forison.github.io/Using-Bootstrap/) -->
+The demo page can be found [HERE](https://nosebook.herokuapp.com)
 
 ## Designed and developed by
 
