@@ -1,0 +1,40 @@
+<%= provide(:title,'users') %>
+
+<body>
+  <div class="container" id="test-user">
+    <div class="row">
+      <div class="mx-auto col-6">
+        <% @users.each do | user |%>
+        <div class="card">
+          <% if !current_user.approved_friend.include?(user.id) && !current_user.pending_friends_arr.include?(user.id) %>
+          <div class="card-body pt-1 pb-1">
+            <div class="d-flex mt-2">
+              <% if user.avatar.attached? %>
+              <%= image_tag user.avatar.first,alt:'user-pics',class: "img-fluid" %>
+              <% else %>
+              <img src="<%= asset_path('default_avatar.png') %>" alt="user-pics" />
+              <% end %>
+              <h3 class="mx-auto mt-4"><%= user.names %></h3>
+              <% if @sent_request.include?(user.id)  %>
+              <button class="btn btn-warning ml-1 btn-sm mt-3" style="height: 35px;">
+                Pending
+              </button>
+              <% else %>
+              <%= form_for(@friendship, :url => friendships_path,:remote => true )do | f | %>
+              <%= f.hidden_field :friend_id, :value => user.id %>
+              <%= f.hidden_field :confirmed, :value => false %>
+              <%= f.submit "Add friend", class: "btn btn-primary ml-1 btn-sm mt-3" %>
+              <% end %>
+              <% end %>
+              <button class="btn btn-default ml-1 btn-sm mt-3" style="height: 35px;">
+                Remove
+              </button>
+            </div>
+          </div>
+          <% end %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,35 @@
+<section class="modal fade p-5" id="notification" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header p-2">
+				<h5 class="modal-title " id="exampleModalLabel">Notification</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+
+			<% if !@recieved_request.nil? %>
+			<div class="modal-body pt-0 pb-0">
+				<% @recieved_request.each do | user | %>
+				<% if !current_user.approved_friend.include?(user.id) %>
+				<div class="d-flex mt-2">
+					<% if user.avatar.attached? %>
+					<%= image_tag user.avatar.first,alt:'user-pics-2',class: "img-fluid" %>
+					<% else %>
+					<img src="<%= asset_path('default_avatar.png') %>" alt="user-pics-2" />
+					<% end %>
+					<h3 class="mx-auto notify-name"><%= user.lastname %> <%= user.firstname %></h3>
+					<%= link_to 'Accept', friendship_path(@path_id.pop), {:style =>'height: 30px',:class =>'btn btn-light ml-1 btn-sm mt-1', :method => 'put'} %>
+					<%= link_to 'Discard', '#', {:style =>'height: 30px',:class =>'btn btn-secondary ml-1 btn-sm mt-1'} %>
+				</div>
+				<% end %>
+				<% end %>
+			</div>
+			<% else %>
+			<p class="text-center">Empty</p>
+			<% end %>
+			<hr>
+		</div>
+	</div>
+</section>

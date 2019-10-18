@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<title><%= yield(:title)%> | facebook</title>
+<%= render 'components/header' %> <%= render 'components/shims' %>
+
+<body>
+  <% if signup_path? || !user_signed_in? %>
+  <%= render'components/signup_nav' %>
+  <% else %>
+  <%= render 'components/navi' %>
+  <%= render 'components/notification' %>
+  <% end %>
+
+  <%= render 'components/flash' %>
+  <%= yield %>
+</body>
+
+</html>

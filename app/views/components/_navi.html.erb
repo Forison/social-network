@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-light " id="nav">
+	<a href="<%= root_path%>" class="navbar-brand"><i class="fa fa-facebook-official fa-2x"></i></a>
+
+	<form class="form-inline" method='get' action="<%= search_path(:search) %>">
+		<div class="input-group">
+			<input type="text" name='search' class="form-control" placeholder="search" style="width: 320px;height:30px">
+			<div class="input-group-prepend">
+				<button type="submit" class="btn input-group-text" id="basic-addon1"><i
+						class="fa fa-search"></i></button>
+			</div>
+		</div>
+	</form>
+
+
+	<div class="left-nav-link d-flex">
+		<div class="one mt-0">
+			<a href="<%= user_path(current_user.id)%>" , class='link'>
+				<% if current_user.avatar.attached? %>
+				<%= image_tag current_user.avatar.reverse.first, class: "img-fluid profile-avatar" %>
+				<%= current_user.lastname.capitalize %>
+				<% else %>
+				<%= image_tag asset_path('default_avatar.png'), class: "img-fluid profile-avatar" %>
+				<%= current_user.lastname.capitalize %></a>
+			<% end %>
+			</a>
+		</div>
+
+		<div class="one">
+			<%= link_to 'home', root_path, class: 'link' %>
+		</div>
+
+		<div class="one">
+			<%= link_to 'create', '#' , class: 'link' %>
+		</div>
+
+		<div class="one d-flex">
+			<a href="<%= users_path %>"><i class="fa fa-users fa-sm"></i></a>
+			<i class="	fa fa-commenting mr-3 ml-3 fa-sm"></i>
+			<!-- Button trigger modal -->
+			<div>
+				<button id="bell" type="button" class="fa fa-bell fa-md notify-count-but" data-toggle="modal"
+					data-target="#notification">
+				</button>
+				<% if current_user.received_but_unconfirmed.count > 0 %>
+				<small data-toggle="modal" data-target="#notification" class="notify-count">
+					<%= current_user.received_but_unconfirmed.count %>
+				</small>
+				<% end %>
+			</div>
+		</div>
+
+		<div class="five">
+			<i class="fa fa-question-circle"></i>
+		</div>
+
+		<div class="mt-2">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false">
+			</a>
+			<div class="dropdown-menu " aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#">Advertising facebook</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Activity log</a>
+				<a class="dropdown-item" href="#">News feed preferences</a>
+				<a class="dropdown-item" href="#">Settings</a>
+				<div class="dropdown-divider"></div>
+				<% if user_signed_in? %>
+				<%= link_to "Log out", destroy_user_session_path, method: :delete ,class: "dropdown-item" %>
+				<% else %>
+				<%= link_to "Log In", new_user_registration_path ,class: "dropdown-item" %>
+				<% end %>
+			</div>
+		</div>
+
+	</div>
+
+</nav>

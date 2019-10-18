@@ -1,0 +1,163 @@
+<%= provide(:title,'Timeline') %>
+
+<body>
+  <div class="container-fluid" id="post-my-profile">
+    <div class="row">
+      <div class="col-2 p-0 mt-3">
+        <div class="mx-auto profile-pic">
+          <% if current_user.avatar.attached? %>
+          <%= image_tag current_user.avatar.reverse.first, class: "img-fluid sho-profile-avatar" %>
+          <% else %>
+          <%= image_tag asset_path('default_avatar.png'), class:"img-fluid sho-profile-avatar" %>
+          <% end %>
+        </div>
+        <a href="<%= edit_user_registration_path %>" class="btn btn-primary mt-5 d-block mx-auto" href="#">Update
+          profile</a>
+      </div>
+
+      <div class="col-5">
+        <div class="main">
+          <div class="topmost">
+            <div class="card mt-2">
+              <div class="card-header">
+                Create Post
+              </div>
+              <div class="card-body">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn poster p-3" data-toggle="modal" data-target="#exampleModal">
+                  What is on your mind ?
+                </button>
+              </div>
+              <div class="card-footer">
+                <img src="<%= asset_path('uploader.png')%>" alt="photo-upload" />
+                <img src="<%= asset_path('feeling.png')%>" alt="photo-upload" />
+                <img src="<%= asset_path('tag.png')%>" alt="photo-upload" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <%= form_for(:post, url: posts_path) do |f| %>
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Create Post
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="modal-body">
+                  <div class="field">
+                    <%= f.text_area :postcontent, placeholder: " What is on your mind ?", class: "form-control" %>
+                  </div>
+                  <div class="field">
+                    <%= f.file_field :avatar, multiple: true, placeholder: "attach image to post", class: "form-control" %>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <%= f.submit "post" ,class: "btn btn-primary postBut" %>
+                </div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+
+          <% @posts.each do | p | %>
+          <div class="posted">
+            <div class="card mt-2">
+              <div class="card-body">
+                <div class="photo-and-name">
+                  <% if p.avatar.empty? %>
+
+                  <a href="#">
+                    <%= p.author.names.capitalize %>
+                  </a>
+                  <i class="fa fa-ellipsis-h float-right"></i>
+                  <div class="text-content p-1 mt-1">
+                    <p><%= p.postcontent[0..50]%><%= link_to '...more', post_path(p.id) %></p>
+                  </div>
+
+                  <% else %>
+
+                  <a href="#">
+                    <%= p.author.names.capitalize %>
+                  </a>
+                  <i class="fa fa-ellipsis-h float-right"></i>
+                  <div class="text-content p-1 mt-1">
+                    <p><%= p.postcontent[0..50] %><%= link_to '...more', post_path(p.id) %></p>
+                  </div>
+                  <%= image_tag p.avatar.first, class: "img-fluid " %>
+                  <% end %>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-flex justify-content-around">
+                  <% if !current_user.liked_posts.ids.include?(p.id) %>
+                  <i>
+                    <%= form_for(@like, :url => likes_path,:remote => true )do | f | %>
+                    <%= f.hidden_field :post_id, :value => "#{p.id}" %>
+                    <%= f.hidden_field :status, :value => true %>
+                    <%= f.submit "Like", class: "btn btn-info pl-5 pr-5" %>
+                    <% end %>
+                  </i>
+                  <% else %>
+                  <i>
+                    <%= link_to 'unlike', like_path(current_user.likes.ids ), class: 'btn btn-info pl-5 pr-5', method: :delete %>
+                  </i>
+                  <% end %>
+                  <a href="#" class="btn btn-info pl-4 pr-4"><i class="fa fa-comment ">
+                      comment</i></a>
+                  <a href="#" class="btn btn-info pl-5 pr-5"><i class="fa fa-share "> share</i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card">
+          <div class="card-header"> My Friends </div>
+          <% current_user.find_friend(current_user.approved_friend).each do | myfriend | %>
+          <div class="card-body">
+            <div class="d-flex">
+              <% if myfriend.avatar.attached? %>
+              <%= image_tag myfriend.avatar.first,alt:'friend-pics',class: "img-fluid" %>
+              <% else %>
+              <img src="<%= asset_path('default_avatar.png') %>" alt="friend-pics" />
+              <% end %>
+              <span class="text-capitalize mx-auto"><%= myfriend.names %>
+              </span>
+              <a href="#"> unfriend </a>
+            </div>
+            <p class="text-center">
+              <small><%= pluralize(current_user.find_friend(current_user.approved_friend).count,'Friend') %></small>
+              <br><small><%= pluralize(current_user.mutual_friend_count(myfriend),'mutual friend') %></small>
+            </p>
+            <hr>
+          </div>
+
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-2 p-0">
+        <div class="chat-side">
+          <div class="instant-game">
+            <img src="<%= asset_path('one.png') %>" alt="instant-game" />
+          </div>
+          <div class="your-game">
+            <img src="<%= asset_path('two.png') %>" alt="your-game" />
+          </div>
+          <div class="chats"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
