@@ -14,18 +14,7 @@
 						<img src="<%= asset_path('default_avatar.png')%>" alt="default_avatar">
 						<%= current_user.lastname.capitalize %>
 						<% end %>
-					</a> <br>
-
-					<div class="mt-2"><i class="fa fa-desktop"></i> some random link</div> <br>
-					<span>Shortcut</span><br>
-					<a href="#"><i class="fa fa-desktop"></i> some random link</a> <br>
-					<a href="#"><i class="fa fa-desktop"></i> some random link</a> <br>
-					<a href="#"><i class="fa fa-desktop"></i> some random link</a> <br>
-					<a href="#"><i class="fa fa-desktop"></i> some random link</a> <br>
-					<a href="#"><i class="fa fa-desktop"></i> some random link</a> <br>
-					<span class="mt-1">Explain</span><br>
-					<a href="#"><i class="fa fa-desktop"></i> some random link</a> <br>
-					<a href="#"><i class="fa fa-desktop"></i> some random link</a> <br>
+					</a>
 				</div>
 			</div>
 			<div class="col-5">
@@ -38,23 +27,22 @@
 							<div class="card-body">
 
 								<!-- Button trigger modal -->
-								<button type="button" class="btn poster p-3" data-toggle="modal"
-									data-target="#exampleModal">
+								<button type="button" class="btn poster p-3" data-toggle="modal" data-target="#exampleModal">
 									What is on your mind ?
 								</button>
 							</div>
-							<div class="card-footer">
-								<img src="<%= asset_path('uploader.png')%>" alt="photo-upload">
-								<img src="<%= asset_path('feeling.png')%>" alt="photo-upload">
-								<img src="<%= asset_path('tag.png')%>" alt="photo-upload">
+							<div class="card-footer d-flex justify-content-around">
+								<a href="#" class="text-light">🎥 Video/photo</a>
+								<a href="#" class="text-light">😃 Feeling</a>
+								<a href="#" class="text-light">👯 Tag friend</a>
 							</div>
 						</div>
 					</div>
 
 
 					<!-- Modal -->
-					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-						aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
 						<div class="modal-dialog" role="document">
 							<div class="modal-content">
 								<%= form_for(:post, url: posts_path) do |f| %>
