@@ -25,6 +25,21 @@ $ cd social-network
 
 > open by issuing the command ```rails s```
 
+## Testing
+
+> Clone the repository to your local machine
+
+```sh
+$ git clone https://github.com/forison/social-network.git
+```
+> cd into the directory
+
+```sh
+$ cd social-network
+```
+
+> run ```rspec```
+
 ## Deployment
 
 The demo page can be found [HERE](https://nosebook.herokuapp.com)
