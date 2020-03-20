@@ -7,7 +7,4 @@ Rails.application.routes.draw do
   resources :likes, only: [:create, :destroy]
   resources :search, only: [:show]
   resources :friendships, only: [:create, :destroy, :update]
-  #  devise_scope :user do 
-  #   get '/auth/facebook/callback', to: "users/omniauth_callbacks#facebook"
-  # end
 end

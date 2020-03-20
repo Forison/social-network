@@ -1,10 +1,10 @@
 img[alt="default_avatar"]{
-    width: 25px;   
+    width: 35px;   
 }
 .profile-avatar{
-    width: 28px;
-    height: 28px;
-    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 .sho-profile-avatar{
     width: 100%;
@@ -12,7 +12,7 @@ img[alt="default_avatar"]{
 .signup_navbar{
     width: 100%;
     height: 82px;
-    background: #000000;
+    background: #000;
 }
 .signup_navbar a{
     color: #fff;
@@ -47,12 +47,54 @@ small{
     font-size: 10px;
 }
 .sign-up-body{
-    background: rgb(240, 240, 240);
+    background-image: linear-gradient(#111,#fff,#000);
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.text-one{
+    font-family: 'Tangerine', serif;
+    font-size: 38px;
+    text-align: center;
+    text-shadow: 4px 4px 4px #000;
+    font-weight: 900;
+    color: #fff;
+}
+.text-one-half{
+    font-size: 18px;
+    font-family: 'Tangerine', serif;
+    text-align: center;
+    text-shadow: 4px 4px 4px #000;
+    font-weight: 900;
+    color: #000;
+}
+.text-two{
+    font-size: 15px;
+    font-family: 'Tangerine', serif;
+    text-align: center;
+    text-shadow: 4px 4px 4px #000;
+    font-weight: 900;
+    color: #000;
+}
+input::placeholder{
+    font-size: 24px;
+    font-family: 'Tangerine', serif;
+    font-weight: 900;
+    color: #000;
+    text-transform: capitalize;
+}
+.btn-text{
+    font-size: 25px;
+    font-family: 'Tangerine', serif;
+    color: #fff;
+    font-weight: bolder;
 }
 .one{
     height: 40px;
-    border-right: 1px solid goldenrod;
     padding: 15px;
+    font-family: 'Tangerine', serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bolder;
 }
 .five{
     padding: 15px;
@@ -82,13 +124,6 @@ img[alt="user-pics-2"]{
 .profile-pic{
     width: 100px;
     height: 100px;
-    border: 1px solid gold;
-    transform: rotate(-10deg); 
-    box-shadow: 0px 0px 20px 0px;
-    transition-delay: 0.2s;
-}
-.profile-pic:hover{
-    transform: rotate(0deg); 
     box-shadow: 0px 0px 20px 0px;
 }
 .one > a{

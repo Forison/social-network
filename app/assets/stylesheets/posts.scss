@@ -3,7 +3,35 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body{
     margin-top: 80px;
-    background: #ffd700;
+    background-image: linear-gradient(#fff,gold,#fff);
+}
+#logo{
+     font-family: 'Tangerine', serif;
+     font-size: 58px;
+     text-shadow: 4px 4px 4px #000;
+     font-weight: 900;
+}
+#logoI{
+     font-family: 'Tangerine', serif;
+     font-size: 38px;
+     margin-right: 15px;
+     text-shadow: 4px 4px 4px #000;
+     font-weight: 900;
+     color: #fff;
+     text-shadow: 1px 1px gold;
+}
+.settings{
+    margin-left: 80%;
+    font-family: 'Tangerine', serif;
+    font-size: 38px;
+    background-image: linear-gradient(#fff,gold,#fff);
+}
+.posting-modal{
+    font-family: 'Tangerine', serif;
+}
+.postBut{
+    width: 100%; 
+    text-transform: capitalize;
 }
 .layout{
     width: 100%;
@@ -24,12 +52,12 @@ img[alt='oops']{
 }
 .suggested-wrap{
     border: 1px solid gold;
-   box-shadow: inset 0 0 10px #000000; 
+    box-shadow: inset 0 0 10px #000000; 
 }
 .suggested-likes{
     height: 35px;
     border: 1px solid goldenrod;
-   box-shadow: inset 0 0 10px #000000; 
+    box-shadow: inset 0 0 10px #000000; 
 }
 .suggested-page-image{
    border: 1px solid goldenrod;
@@ -75,9 +103,7 @@ img[alt='suggested-page-image-logo']{
     border:0;
     color: #444;
 }
-.postBut{
-    width: 100%; 
-}
+
 .link-wrap > a{
     font-size: 15px;
     text-transform: capitalize;

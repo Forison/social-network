@@ -28,17 +28,17 @@
                   What is on your mind ?
                 </button>
               </div>
-              <div class="card-footer">
-                <img src="<%= asset_path('uploader.png')%>" alt="photo-upload" />
-                <img src="<%= asset_path('feeling.png')%>" alt="photo-upload" />
-                <img src="<%= asset_path('tag.png')%>" alt="photo-upload" />
+              <div class="card-footer d-flex justify-content-around">
+                <a href="#" class="text-light">🎥 Video/photo</a>
+                <a href="#" class="text-light">😃 Feeling</a>
+                <a href="#" class="text-light">👯 Tag friend</a>
               </div>
             </div>
           </div>
 
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+          <div class="posting-modal modal fade" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <%= form_for(:post, url: posts_path) do |f| %>
@@ -60,7 +60,7 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <%= f.submit "post" ,class: "btn btn-primary postBut" %>
+                  <%= f.submit "post" ,class: "btn btn-secondary postBut" %>
                 </div>
                 <% end %>
               </div>

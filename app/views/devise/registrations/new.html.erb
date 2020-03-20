@@ -1,13 +1,12 @@
 <%= provide(:title, 'sign up or in') %>
 
-<body class="sign-up-body ">
+<body class="sign-up-body">
   <div class="container " id="signup-form-wrap">
     <div class="row">
       <div class="col-8"></div>
       <div class="col-4 ">
 
-        <h2>Create a New Account</h2>
-        <p>It’s quick and easy.</p>
+        <h1 class="text-one">Create a New Account</h1>
         <div id="signup_form-wrap">
           <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= render "devise/shared/error_messages", resource: resource %>
@@ -30,24 +29,24 @@
             <%= f.password_field :password, autocomplete: "new-password" ,class: 'form-control', placeholder: "New password" %>
           </div>
           <div class="field p-1 mt-4">
-            <%= f.label :dob, "Birthday" %><br />
+            <%= f.label :dob, "Birthday", class: "text-one-half" %><br />
             <%= f.date_field :dob, autofocus: true, class: 'form-control birthday' %>
           </div>
           <div class="field p-1 mt-2">
-            <%= f.label :gender, "Gender" %><br>
+            <%= f.label :gender, "Gender", class: "text-one-half" %><br>
 
             <div class="col-9 mr-auto">
               <div class="d-flex justify-content-around">
                 <%= f.radio_button :gender, :value => 'female' %>
-                <span>Female</span>
+                <span class="text-two">Female</span>
                 <%= f.radio_button :gender, :value => 'male' %>
-                <span>Male</span>
+                <span class="text-two">Male</span>
                 <%= f.radio_button :gender, :value => 'custom' %>
-                <span>Custom</span> <i class="fa fa-question-circle" aria-hidden="true"></i>
+                <span class="text-two">Custom</span> <i class="fa fa-question-circle" aria-hidden="true"></i>
               </div>
             </div>
           </div>
-          <small>
+          <small class="text-one-half">
             By clicking Sign Up, you agree to our Terms,
             Data Policy and Cookies Policy.
             You may receive SMS Notifications
@@ -56,14 +55,13 @@
           </small>
 
           <div class="actions mt-3 d-flex">
-            <%= f.submit "Sign up", class: "btn btn-success pl-5 pr-5" %>
-            <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, class: "btn btn-primary ml-auto" %>
+            <%= f.submit "Sign up", class: "btn btn-secondary pl-5 pr-5 btn-text" %>
+            <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, class: "btn btn-primary ml-auto btn-text" %>
           </div>
           <% end %>
           <hr>
           <small>Create a Page for a celebrity, band or business.</small>
         </div>
-        <!-- <%= render "devise/shared/links" %> -->
       </div>
     </div>
   </div>
