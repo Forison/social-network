@@ -155,7 +155,22 @@
           <div class="your-game">
             <img src="<%= asset_path('two.png') %>" alt="your-game" />
           </div>
-          <div class="chats"></div>
+          <div class="chats">
+            <% if current_user.find_friend(current_user.approved_friend).count > 0 %>
+            <% current_user.find_friend(current_user.approved_friend).each do | myfriend | %>
+            <div class="d-flex chats shadow-lg">
+              <div class="col-3 p-1">
+                <% if myfriend.avatar.attached? %>
+                <%= image_tag myfriend.avatar.first, alt:'friend-pics',class: "img-fluid" %>
+                <% end %>
+              </div>
+              <div class="col-9 p-1">
+                <span class="text-two"><%= myfriend.names %></span>
+              </div>
+            </div>
+            <% end %>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>

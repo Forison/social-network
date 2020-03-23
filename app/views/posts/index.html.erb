@@ -27,8 +27,7 @@
 							<div class="card-body">
 
 								<!-- Button trigger modal -->
-								<button type="button" class="btn poster p-3" data-toggle="modal"
-									data-target="#exampleModal">
+								<button type="button" class="btn poster p-3" data-toggle="modal" data-target="#exampleModal">
 									What is on your mind ?
 								</button>
 							</div>
@@ -69,50 +68,12 @@
 							</div>
 						</div>
 					</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-					<div class="next-to-topmost">
-						<div class="card mt-2">
-
-							<div class="card-body">
-
-								<div class="row">
-									<div class="col-3 p-1">
-										<div class="sect"></div>
-									</div>
-									<div class="col-3 p-1">
-										<div class="sect"></div>
-									</div>
-									<div class="col-3 p-1">
-										<div class="sect"></div>
-									</div>
-									<div class="col-3 p-1">
-										<div class="sect"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
 					<% current_user.and_friends.each do | p | %>
 					<div class="posted">
 						<div class="card ">
 							<div class="card-body">
 								<div class="photo-and-name">
 									<% if p.avatar.empty? %>
-
 									<a href="#">
 										<% if p.author.avatar.attached? %>
 										<%= image_tag p.author.avatar.reverse.first, class: "img-fluid profile-avatar" %>
@@ -124,7 +85,7 @@
 									</a>
 									<i class="fa fa-ellipsis-h float-right"></i>
 									<div class="text-content p-1 mt-1">
-										<p> <%= p.postcontent[0..50] %><%= link_to '...more', post_path(p.id) %></p>
+										<p> <%= p.postcontent[0..50].capitalize %><%= link_to '...more', post_path(p.id) %></p>
 									</div>
 
 									<% else %>
@@ -140,7 +101,7 @@
 									</a>
 									<i class="fa fa-ellipsis-h float-right"></i>
 									<div class="text-content p-1 mt-1">
-										<p> <%= p.postcontent[0..50] %><%= link_to '...more', post_path(p.id) %></p>
+										<p> <%= p.postcontent[0..50].capitalize %><%= link_to '...more', post_path(p.id) %></p>
 									</div>
 									<%= image_tag p.avatar.first, class: "img-fluid " %>
 
@@ -273,14 +234,28 @@
 					<div class="your-game">
 						<img src="<%= asset_path('two.png') %>" alt="your-game">
 					</div>
-					<div class="chats">
 
+					<% if current_user.find_friend(current_user.approved_friend).count > 0 %>
+					<% current_user.find_friend(current_user.approved_friend).each do | myfriend | %>
+					<div class="d-flex chats shadow-lg">
+						<div class="col-3 p-1">
+							<% if myfriend.avatar.attached? %>
+							<%= image_tag myfriend.avatar.first, alt:'friend-pics',class: "img-fluid" %>
+							<% end %>
+						</div>
+						<div class="col-9 p-1">
+							<span class="text-two"><%= myfriend.names %></span>
+						</div>
 					</div>
+					<% end %>
+					<% end %>
+
 				</div>
 			</div>
-
-
 		</div>
+
+
+	</div>
 	</div>
 
 </body>
