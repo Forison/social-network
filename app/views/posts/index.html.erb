@@ -77,10 +77,10 @@
 									<a href="#">
 										<% if p.author.avatar.attached? %>
 										<%= image_tag p.author.avatar.reverse.first, class: "img-fluid profile-avatar" %>
-										<%= p.author.lastname.capitalize %>
+										<span class="text-one-half"><%= p.author.lastname.capitalize %></span>
 										<% else %>
 										<img src="<%= asset_path('default_avatar.png')%>" alt="default_avatar">
-										<%= p.author.lastname.capitalize %>
+										<span class="text-one-half"><%= p.author.lastname.capitalize %></span>
 										<% end %>
 									</a>
 									<i class="fa fa-ellipsis-h float-right"></i>
@@ -104,9 +104,7 @@
 										<p> <%= p.postcontent[0..50].capitalize %><%= link_to '...more', post_path(p.id) %></p>
 									</div>
 									<%= image_tag p.avatar.first, class: "img-fluid " %>
-
 									<% end %>
-
 								</div>
 								<br>
 								<div class="tally-table d-flex justify-content-around">

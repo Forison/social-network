@@ -1,7 +1,15 @@
-# social network
+# lINK-UP social network
 
-A practical implementation of rails for development of an app similar to [facebook](facebook.com)as part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ "The Global School for Remote Software Developers!").
-![link up](./page.png)
+A practical implementation of rails for development of an app similar to [Facebook](facebook.com)as part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ "The Global School for Remote Software Developers!").
+![link up](./page1.png)
+![link up](./page2.png)
+![link up](./page3.png)
+![link up](./page4.png)
+
+## Descritpion
+
+This a application has the functionalities of a social media appliaction. Authorized user are able to perform the ```[Features]``` stated in the section below. The features of this application tend to mimic most basic features of the facebook social media appliaction.
+
 ## Technologies
 
 - HTML
@@ -9,6 +17,19 @@ A practical implementation of rails for development of an app similar to [facebo
 - Ruby
 - Ruby on Rails 
 - SASS
+
+## Features
+
+- Sign up
+- Login 
+- Upload post
+- Like a post
+- Comment on a post
+- View notification
+- Send friend request
+- Accept friend request
+- View post frm friends
+- View mutual friends
 
 ## Usage
 
@@ -50,7 +71,11 @@ The demo page can be found [HERE](https://nosebook.herokuapp.com)
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/forison/) [Twitter](https://twitter.com/addo_forison)
+[LinkedIn](https://www.linkedin.com/in/forison/) | [Twitter](https://twitter.com/addo_forison)
+
+## Appreciation
+
+[Microverse](https://www.microverse.org/ "The Global School for Remote Software Developers!")
 
 ## Contributing
 

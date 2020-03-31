@@ -74,9 +74,9 @@
                 <div class="photo-and-name">
                   <% if p.avatar.empty? %>
 
-                  <a href="#">
+                  <span class="text-one-half">
                     <%= p.author.names.capitalize %>
-                  </a>
+                  </span>
                   <i class="fa fa-ellipsis-h float-right"></i>
                   <div class="text-content p-1 mt-1">
                     <p><%= p.postcontent[0..50]%><%= link_to '...more', post_path(p.id) %></p>
