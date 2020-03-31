@@ -32,6 +32,11 @@ This a application has the functionalities of a social media appliaction. Author
 - View post frm friends
 - View mutual friends
 
+## Potential feature
+
+- Chat implementation for user
+- Email confirmation
+
 ## Usage
 
 > Clone the repository to your local machine
