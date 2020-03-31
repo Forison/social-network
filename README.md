@@ -1,6 +1,6 @@
 # lINK-UP social network
 
-A practical implementation of rails for development of an app similar to [Facebook](facebook.com)as part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ "The Global School for Remote Software Developers!").
+A practical implementation of rails for development of an app similar to [Facebook](facebook.com) as part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ "The Global School for Remote Software Developers!").
 ![link up](./page1.png)
 ![link up](./page2.png)
 ![link up](./page3.png)
@@ -17,6 +17,7 @@ This a application has the functionalities of a social media appliaction. Author
 - Ruby
 - Ruby on Rails 
 - SASS
+- facebook Omniauth
 
 ## Features
 
