@@ -29,7 +29,7 @@ This a application has the functionalities of a social media appliaction. Author
 - View notification
 - Send friend request
 - Accept friend request
-- View post frm friends
+- View post from friends
 - View mutual friends
 
 ## Potential feature
