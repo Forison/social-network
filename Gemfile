@@ -9,7 +9,7 @@ ruby '2.5.1'
 gem 'dotenv-rails'
 gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.3.1'
 gem 'devise'
 gem 'font-awesome-rails'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
